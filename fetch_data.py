@@ -17,7 +17,7 @@ except ImportError:
 
 import requests
 
-# ── DEFAULT TICKERS (overridden by tickers.json if present) ───────────────────
+# ── DEFAULT TICKERS (overridden by tickers.json if present) ────────────────────
 ETF_MAIN    = ['SPY','QQQ','DIA','IWM']
 SUBMARKET   = ['IVW','IVE','IJK','IJJ','IJT','IJS','MGK','VUG','VTV']
 SECTOR      = ['XLK','XLV','XLF','XLE','XLY','XLI','XLB','XLU','XLRE','XLC','XLP']
@@ -35,7 +35,7 @@ YIELDS      = ['^TNX','^TYX']
 DX_VIX      = ['DX-Y.NYB','^VIX']
 CRYPTO_YF   = ['BTC-USD','ETH-USD','SOL-USD','XRP-USD']
 
-# ── LOAD FROM tickers.json (single source of truth) ───────────────────────────
+# ── LOAD FROM tickers.json (single source of truth) ─────────────────────────────────
 config_path = Path(__file__).parent / 'tickers.json'
 if config_path.exists():
     with open(config_path) as f:
@@ -53,11 +53,11 @@ if config_path.exists():
     YIELDS     = CFG.get('yields',     YIELDS)
     DX_VIX     = CFG.get('dxvix',      DX_VIX)
     CRYPTO_YF  = CFG.get('crypto',     CRYPTO_YF)
-    print(f"✓ Loaded tickers from tickers.json ({len(THEMATIC)} thematic, {len(COUNTRY)} country)")
+    print(f"\u2713 Loaded tickers from tickers.json ({len(THEMATIC)} thematic, {len(COUNTRY)} country)")
 else:
-    print("⚠ tickers.json not found — using built-in defaults")
+    print("\u26a0 tickers.json not found — using built-in defaults")
 
-# ── TICKER REMAPS ──────────────────────────────────────────────────────────────
+# ── TICKER REMAPS ──────────────────────────────────────────────────────────────────────────────
 TICKER_REMAP = {
     'ES=F':'ES1!', 'NQ=F':'NQ1!', 'RTY=F':'RTY1!', 'YM=F':'YM1!',
     'GC=F':'GC1!', 'SI=F':'SI1!', 'HG=F':'HG1!', 'PL=F':'PL1!', 'PA=F':'PA1!',
@@ -67,23 +67,25 @@ TICKER_REMAP = {
     'BTC-USD':'BTC','ETH-USD':'ETH','SOL-USD':'SOL','XRP-USD':'XRP',
 }
 
-# ── 2-YEAR TREASURY YIELD ─────────────────────────────────────────────────────
+# ── 2-YEAR TREASURY YIELD ─────────────────────────────────────────────────────────────────────────────
 def fetch_treasury_2y():
     """Fetch 2-year Treasury yield. Tries FRED CSV first, then Treasury XML."""
-    # Method 1: FRED public CSV
+
+    # Method 1: FRED public CSV (no API key needed)
     try:
         url = 'https://fred.stlouisfed.org/graph/fredgraph.csv?id=DGS2'
         resp = requests.get(url, timeout=15, headers={'User-Agent': 'Mozilla/5.0'})
         resp.raise_for_status()
         reader = csv.reader(StringIO(resp.text))
         rows = list(reader)
+        # Last row with a real value (skip "." missing values)
         rate = None
-        for row in reversed(rows[1:]):
+        for row in reversed(rows[1:]):  # skip header
             if len(row) == 2 and row[1] not in ('.', '', 'VALUE'):
                 rate = float(row[1])
                 break
         if rate is not None:
-            print(f"  ✓ US2Y = {rate}% (FRED)")
+            print(f"  \u2713 US2Y = {rate}% (FRED)")
             return {
                 'sym': 'US2Y', 'price': round(rate, 4),
                 'd1': 0.0, 'w1': 0.0, 'hi52': 0.0, 'ytd': 0.0,
@@ -111,7 +113,7 @@ def fetch_treasury_2y():
             val = last.find(f'{{{ns_d}}}BC_2YEAR')
             if val is not None and val.text:
                 rate = float(val.text)
-                print(f"  ✓ US2Y = {rate}% (Treasury XML)")
+                print(f"  \u2713 US2Y = {rate}% (Treasury XML)")
                 return {
                     'sym': 'US2Y', 'price': round(rate, 4),
                     'd1': 0.0, 'w1': 0.0, 'hi52': 0.0, 'ytd': 0.0,
@@ -120,12 +122,16 @@ def fetch_treasury_2y():
     except Exception as e:
         print(f"  Treasury XML also failed: {e}")
 
-    print("  ⚠ Could not fetch 2Y yield from any source")
+    print("  \u26a0 Could not fetch 2Y yield from any source")
     return None
 
-# ── ETF HOLDINGS ──────────────────────────────────────────────────────────────
+# ── ETF HOLDINGS ──────────────────────────────────────────────────────────────────────────────────────
 def fetch_etf_holdings(tickers):
-    """Fetch top 10 holdings for each ETF. Returns {sym: [{s,n,w}, ...]}"""
+    """
+    Fetch top 10 holdings for each ETF using yfinance.
+    Returns dict: { 'SLV': [{s, n, w}, ...], ... }
+    Format matches HOLDINGS object in index.html: s=symbol, n=name, w=weight%
+    """
     holdings_map = {}
     total = len(tickers)
     for i, sym in enumerate(tickers):
@@ -133,40 +139,65 @@ def fetch_etf_holdings(tickers):
         try:
             t = yf.Ticker(sym)
             rows = []
+
+            # Try funds_data.top_holdings (most reliable for ETFs)
             try:
                 fd = t.funds_data
                 if fd is not None:
                     th = fd.top_holdings
                     if th is not None and hasattr(th, 'iterrows') and not th.empty:
-                        for _, row in th.head(10).iterrows():
-                            s = str(row.get('symbol', '')).strip()
-                            n = str(row.get('holdingName', s)).strip()
-                            w = float(row.get('holdingPercent', 0))
-                            w = round(w * 100, 2) if w <= 1.0 else round(w, 2)
-                            rows.append({'s': s, 'n': n, 'w': w})
+                        for idx, row in th.head(10).iterrows():
+                            # holdingName is the DataFrame INDEX, not a column
+                            n = str(idx).strip() if idx and str(idx) != 'nan' else ''
+                            s = ''
+                            w = 0.0
+                            for sym_col in ['symbol', 'Symbol', 'ticker']:
+                                if sym_col in row.index:
+                                    s = str(row[sym_col]).strip()
+                                    break
+                            for pct_col in ['holdingPercent', 'holdingpercent', '% Assets', 'weight']:
+                                if pct_col in row.index:
+                                    try:
+                                        w = float(row[pct_col])
+                                        w = round(w * 100, 2) if w <= 1.0 else round(w, 2)
+                                    except Exception:
+                                        pass
+                                    break
+                            if n or s:
+                                rows.append({'s': s, 'n': n or s, 'w': w})
             except Exception:
                 pass
+
+            # Fallback: info['holdings']
             if not rows:
                 try:
-                    for h in t.info.get('holdings', [])[:10]:
+                    info = t.info
+                    for h in info.get('holdings', [])[:10]:
                         s = h.get('symbol', '')
                         n = h.get('holdingName', s)
                         w = h.get('holdingPercent', 0)
-                        w = round(w * 100, 2) if w <= 1.0 else round(w, 2)
+                        if w <= 1.0:
+                            w = round(w * 100, 2)
+                        else:
+                            w = round(w, 2)
                         rows.append({'s': str(s), 'n': str(n), 'w': w})
                 except Exception:
                     pass
+
             if rows:
                 holdings_map[sym] = rows
-                print(f"✓ {len(rows)}")
+                print(f"\u2713 {len(rows)} holdings")
             else:
-                print("—")
+                print("\u2014")
+
         except Exception as e:
-            print(f"✗ {e}")
-        time.sleep(0.4)
+            print(f"\u2717 {e}")
+
+        time.sleep(0.4)  # polite delay
+
     return holdings_map
 
-# ── CORE METRICS ──────────────────────────────────────────────────────────────
+# ── CORE METRIC EXTRACTION ─────────────────────────────────────────────────────────────────────────────────
 def pct(new, old):
     if old and old != 0:
         return round((new - old) / abs(old) * 100, 2)
@@ -240,7 +271,7 @@ def extract_metrics(df, sym):
         result['name'] = crypto_names[sym]
     return result
 
-# ── MAIN FETCH ────────────────────────────────────────────────────────────────
+# ── MAIN FETCH ───────────────────────────────────────────────────────────────────────────────────────────────────
 def fetch_all():
     output = {
         'generated_at': datetime.datetime.utcnow().strftime('%Y-%m-%dT%H:%M:%SZ'),
@@ -269,10 +300,10 @@ def fetch_all():
                     rec['sym'] = yield_map.get(yf_sym, rec['sym'])
                 output[key].append(rec)
             else:
-                print(f"  ⚠ No data for {yf_sym}")
+                print(f"  \u26a0 No data for {yf_sym}")
         time.sleep(1)
 
-    # 2Y Treasury yield (prepend so order is 2Y, 10Y, 30Y)
+    # 2-Year Treasury yield (prepend so order is 2Y, 10Y, 30Y)
     print("Fetching 2Y Treasury yield...")
     rec_2y = fetch_treasury_2y()
     if rec_2y:
@@ -288,7 +319,7 @@ def fetch_all():
     ))
     print(f"\nFetching ETF holdings ({len(holdings_tickers)} ETFs)...")
     output['holdings'] = fetch_etf_holdings(holdings_tickers)
-    print(f"✓ Holdings fetched for {len(output['holdings'])} ETFs")
+    print(f"\u2713 Holdings fetched for {len(output['holdings'])} ETFs")
 
     return output
 
@@ -301,7 +332,7 @@ if __name__ == '__main__':
     with open(out_path, 'w') as f:
         json.dump(data, f, indent=2)
     total = sum(len(v) for v in data.values() if isinstance(v, list))
-    print(f"\n✓ Wrote {total} records to {out_path}")
+    print(f"\n\u2713 Wrote {total} records to {out_path}")
     print(f"  Yields: {[x['sym'] for x in data['yields']]}")
     print(f"  Thematic top 3: {[x['sym'] for x in data['thematic'][:3]]}")
     print(f"  Holdings for: {list(data['holdings'].keys())[:5]}...")
