@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>MCC//PRO — Market Command Center</title>
+<title>Market Command Centre</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,300;0,400;0,500;0,600;1,300&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
 <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
@@ -32,7 +32,7 @@
 }
 *{box-sizing:border-box;margin:0;padding:0}
 html{scroll-behavior:smooth}
-body{background:var(--bg);color:var(--text);font-family:var(--mono);font-size:12px;overflow-x:hidden}
+body{background:var(--bg);color:var(--text);font-family:var(--mono);font-size:12.5px;overflow-x:hidden}
 body::before{content:'';position:fixed;inset:0;background-image:linear-gradient(rgba(0,200,255,0.015) 1px,transparent 1px),linear-gradient(90deg,rgba(0,200,255,0.015) 1px,transparent 1px);background-size:48px 48px;pointer-events:none;z-index:0}
 .wrap{position:relative;z-index:1;max-width:1680px;margin:0 auto;padding:14px}
 
@@ -40,17 +40,17 @@ body::before{content:'';position:fixed;inset:0;background-image:linear-gradient(
 .hdr{display:flex;align-items:center;justify-content:space-between;padding:14px 18px;background:var(--bg2);border:1px solid var(--border);border-radius:4px;margin-bottom:10px;position:relative;overflow:hidden}
 .hdr::after{content:'';position:absolute;top:0;left:0;right:0;height:2px;background:linear-gradient(90deg,transparent 0%,var(--accent) 40%,var(--green) 70%,transparent 100%)}
 .hdr-l{display:flex;align-items:center;gap:14px}
-.logo{font-size:17px;font-weight:600;letter-spacing:3px;color:var(--accent)}
+.logo{font-size:17.5px;font-weight:600;letter-spacing:3px;color:var(--accent)}
 .logo em{color:var(--text3);font-style:normal}
-.hdr-meta{font-size:10px;color:var(--text2);letter-spacing:1px;line-height:1.9}
-.hdr-meta strong{font-size:13px;color:var(--text);display:block;letter-spacing:0}
-.live{display:flex;align-items:center;gap:5px;font-size:9px;color:var(--text3);letter-spacing:1px}
+.hdr-meta{font-size:10.5px;color:var(--text2);letter-spacing:1px;line-height:1.9}
+.hdr-meta strong{font-size:13.5px;color:var(--text);display:block;letter-spacing:0}
+.live{display:flex;align-items:center;gap:5px;font-size:9.5px;color:var(--text3);letter-spacing:1px}
 .dot{width:5px;height:5px;border-radius:50%;background:var(--green);box-shadow:0 0 6px var(--green);animation:blink 2s infinite}
 @keyframes blink{0%,100%{opacity:1}50%{opacity:.3}}
 .hdr-r{display:flex;gap:7px;align-items:center}
 
 /* ── BUTTONS ── */
-.btn{display:flex;align-items:center;gap:5px;padding:7px 13px;border:1px solid var(--border2);border-radius:3px;background:var(--bg3);color:var(--text2);font-family:var(--mono);font-size:10px;letter-spacing:1px;cursor:pointer;transition:all .15s;text-transform:uppercase;white-space:nowrap}
+.btn{display:flex;align-items:center;gap:5px;padding:7px 13px;border:1px solid var(--border2);border-radius:3px;background:var(--bg3);color:var(--text2);font-family:var(--mono);font-size:10.5px;letter-spacing:1px;cursor:pointer;transition:all .15s;text-transform:uppercase;white-space:nowrap}
 .btn:hover{border-color:var(--accent);color:var(--accent);background:var(--adim)}
 .btn-pri{background:rgba(0,200,255,.12);border-color:var(--accent);color:var(--accent);font-weight:600}
 .btn-pri:hover{background:rgba(0,200,255,.2)}
@@ -61,53 +61,52 @@ body::before{content:'';position:fixed;inset:0;background-image:linear-gradient(
 .btn-copy{border-color:var(--green);color:var(--green)}
 .btn-copy:hover{background:var(--gdim)}
 
-/* ── SPY BENCHMARK ROW ── */
-tr.spy-bench{background:linear-gradient(90deg,rgba(0,200,255,0.06) 0%,rgba(0,200,255,0.03) 60%,transparent 100%)!important}
-tr.spy-bench:hover{background:linear-gradient(90deg,rgba(0,200,255,0.10) 0%,rgba(0,200,255,0.06) 60%,transparent 100%)!important}
-tr.spy-bench td{border-bottom:none}
-tr.spy-bench-hold td{background:rgba(0,200,255,0.02)}
+/* ── BENCHMARK ROW ── */
+tr.bench-row{background:linear-gradient(90deg,rgba(255,51,85,0.08) 0%,rgba(255,51,85,0.04) 60%,transparent 100%)!important}
+tr.bench-row:hover{background:linear-gradient(90deg,rgba(255,51,85,0.14) 0%,rgba(255,51,85,0.07) 60%,transparent 100%)!important}
+tr.bench-row td{border-bottom:1px solid rgba(255,51,85,0.12)!important}
 
 
 .quote-bar{display:flex;align-items:center;justify-content:center;gap:14px;padding:10px 20px;background:linear-gradient(90deg,var(--bg2) 0%,rgba(0,200,255,0.05) 50%,var(--bg2) 100%);border:1px solid rgba(0,200,255,0.15);border-radius:4px;margin-bottom:10px;position:relative;overflow:hidden}
 .quote-bar::before{content:'';position:absolute;inset:0;background:repeating-linear-gradient(90deg,transparent,transparent 200px,rgba(0,200,255,0.015) 200px,rgba(0,200,255,0.015) 201px);pointer-events:none}
-.quote-text{font-size:11px;color:var(--text);letter-spacing:1.5px;font-style:italic;text-align:center;font-family:var(--sans)}
-.quote-author{font-size:9px;color:var(--accent);letter-spacing:2px;text-transform:uppercase;white-space:nowrap}
-.quote-icon{color:rgba(0,200,255,0.3);font-size:11px}
+.quote-text{font-size:11.5px;color:var(--text);letter-spacing:1.5px;font-style:italic;text-align:center;font-family:var(--sans)}
+.quote-author{font-size:9.5px;color:var(--accent);letter-spacing:2px;text-transform:uppercase;white-space:nowrap}
+.quote-icon{color:rgba(0,200,255,0.3);font-size:11.5px}
 
 /* ── API BANNER ── */
-.api-bar{display:flex;align-items:center;gap:10px;padding:7px 12px;background:rgba(255,179,0,.05);border:1px solid rgba(255,179,0,.18);border-radius:3px;margin-bottom:10px;font-size:10px;color:var(--amber);letter-spacing:.5px}
-.api-bar input{flex:1;padding:5px 9px;background:var(--bg3);border:1px solid var(--border2);border-radius:2px;color:var(--text);font-family:var(--mono);font-size:10px;outline:none;transition:border .15s}
+.api-bar{display:flex;align-items:center;gap:10px;padding:7px 12px;background:rgba(255,179,0,.05);border:1px solid rgba(255,179,0,.18);border-radius:3px;margin-bottom:10px;font-size:10.5px;color:var(--amber);letter-spacing:.5px}
+.api-bar input{flex:1;padding:5px 9px;background:var(--bg3);border:1px solid var(--border2);border-radius:2px;color:var(--text);font-family:var(--mono);font-size:10.5px;outline:none;transition:border .15s}
 .api-bar input:focus{border-color:var(--accent)}
 .api-bar label{color:var(--text3);white-space:nowrap}
 
 /* ── SECTION ── */
 .sec{margin-bottom:22px}
 .sec-hdr{display:flex;align-items:center;gap:10px;padding:8px 0 7px;border-bottom:1px solid var(--border);margin-bottom:9px}
-.sec-n{font-size:9px;color:var(--accent);letter-spacing:2px;padding:2px 7px;border:1px solid rgba(0,200,255,.25);border-radius:2px}
-.sec-t{font-size:12px;font-weight:600;color:var(--text);letter-spacing:2px;text-transform:uppercase}
-.sec-sub{font-size:9px;color:var(--text3);letter-spacing:1px;margin-left:auto}
+.sec-n{font-size:9.5px;color:var(--accent);letter-spacing:2px;padding:2px 7px;border:1px solid rgba(0,200,255,.25);border-radius:2px}
+.sec-t{font-size:12.5px;font-weight:600;color:var(--text);letter-spacing:2px;text-transform:uppercase}
+.sec-sub{font-size:9.5px;color:var(--text3);letter-spacing:1px;margin-left:auto}
 .divider{height:1px;background:linear-gradient(90deg,var(--accent),transparent);opacity:.2;margin:18px 0}
 
 /* ── TABLE CARD ── */
 .card{background:var(--bg2);border:1px solid var(--border);border-radius:4px;overflow:hidden;margin-bottom:9px}
-.card-lbl{padding:7px 11px;font-size:9px;letter-spacing:2px;text-transform:uppercase;color:var(--accent);background:var(--bg3);border-bottom:1px solid var(--border);font-weight:500}
+.card-lbl{padding:7px 11px;font-size:9.5px;letter-spacing:2px;text-transform:uppercase;color:var(--accent);background:var(--bg3);border-bottom:1px solid var(--border);font-weight:500}
 table{width:100%;border-collapse:collapse}
-thead th{padding:6px 10px;text-align:right;font-size:8.5px;letter-spacing:1.5px;text-transform:uppercase;color:var(--text3);background:var(--bg3);border-bottom:1px solid var(--border);font-weight:500}
+thead th{padding:6px 10px;text-align:right;font-size:9px;letter-spacing:1.5px;text-transform:uppercase;color:var(--text3);background:var(--bg3);border-bottom:1px solid var(--border);font-weight:500}
 thead th:first-child,thead th.l{text-align:left}
 tbody tr{border-bottom:1px solid rgba(28,37,53,.6);transition:background .1s}
 tbody tr:hover{background:rgba(0,200,255,.025)}
 tbody tr:last-child{border-bottom:none}
-td{padding:6px 10px;text-align:right;font-size:11px}
+td{padding:6px 10px;text-align:right;font-size:11.5px}
 td:first-child,td.l{text-align:left}
-.tn{color:var(--text);font-weight:500;font-size:11px}
-.ts{color:var(--text3);font-size:9px;display:block;letter-spacing:.5px}
+.tn{color:var(--text);font-weight:500;font-size:11.5px}
+.ts{color:var(--text3);font-size:9.5px;display:block;letter-spacing:.5px}
 .up{color:var(--green)}
 .dn{color:var(--red)}
 .neu{color:var(--text3)}
-.up-b{background:var(--gdim);color:var(--green);padding:1px 5px;border-radius:2px;font-size:9.5px}
-.dn-b{background:var(--rdim);color:var(--red);padding:1px 5px;border-radius:2px;font-size:9.5px}
-.neu-b{background:rgba(61,90,120,.15);color:var(--text3);padding:1px 5px;border-radius:2px;font-size:9.5px}
-.rank{display:inline-flex;align-items:center;justify-content:center;width:18px;height:18px;border-radius:2px;font-size:8.5px;font-weight:600;background:var(--bg4);color:var(--text3)}
+.up-b{background:var(--gdim);color:var(--green);padding:1px 5px;border-radius:2px;font-size:10px}
+.dn-b{background:var(--rdim);color:var(--red);padding:1px 5px;border-radius:2px;font-size:10px}
+.neu-b{background:rgba(61,90,120,.15);color:var(--text3);padding:1px 5px;border-radius:2px;font-size:10px}
+.rank{display:inline-flex;align-items:center;justify-content:center;width:18px;height:18px;border-radius:2px;font-size:9px;font-weight:600;background:var(--bg4);color:var(--text3)}
 .rank.g{background:rgba(255,179,0,.1);color:var(--amber)}
 
 /* ── GRIDS ── */
@@ -119,72 +118,86 @@ td:first-child,td.l{text-align:left}
 /* ── SPARKLINE ── */
 .sp{display:inline-block;vertical-align:middle}
 
-/* ── TRADINGVIEW ── */
-
+/* ── TRADINGVIEW MODAL ── */
+#tv-modal{display:none;position:fixed;inset:0;z-index:9990;background:rgba(0,0,0,0.82);align-items:center;justify-content:center}
+#tv-modal.open{display:flex}
+#tv-modal-box{width:min(1000px,95vw);height:min(640px,90vh);background:var(--bg);border:1px solid var(--border2);border-radius:4px;display:flex;flex-direction:column;overflow:hidden}
+#tv-modal-hdr{display:flex;align-items:center;padding:8px 12px;background:var(--bg2);border-bottom:1px solid var(--border);gap:10px}
+#tv-modal-title{font-size:11px;color:var(--accent);letter-spacing:1.5px;text-transform:uppercase;flex:1;min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+#tv-modal-hdr button{background:none;border:1px solid var(--border2);color:var(--text3);font-family:var(--mono);font-size:9px;letter-spacing:1px;padding:4px 8px;border-radius:2px;cursor:pointer;text-transform:uppercase}
+#tv-modal-hdr button:hover{border-color:var(--red);color:var(--red)}
+#tv-frame-wrap{flex:1;overflow:hidden}
+#tv-frame{width:100%;height:100%;border:none}
+/* ── PCT BAR ── */
+.pct-wrap{display:inline-flex;flex-direction:column;align-items:flex-end;gap:1px;min-width:52px}
+.pct-bar{height:2px;border-radius:1px;opacity:0.5;min-width:1px}
+/* ── TICKER LINK ── */
+.tn-link{cursor:pointer;border-bottom:1px dotted rgba(120,150,180,0.4);transition:color .15s}
+.tn-link:hover{color:var(--accent)!important;border-bottom-color:var(--accent)}
 
 /* ── HOLDINGS DROPDOWN ── */
-.expand-btn{display:inline-flex;align-items:center;gap:4px;background:none;border:none;color:var(--text3);font-family:var(--mono);font-size:9px;cursor:pointer;padding:0;letter-spacing:.5px;transition:color .15s}
+.expand-btn{display:inline-flex;align-items:center;gap:4px;background:none;border:none;color:var(--text3);font-family:var(--mono);font-size:9.5px;cursor:pointer;padding:0;letter-spacing:.5px;transition:color .15s}
 .expand-btn:hover{color:var(--accent)}
 .expand-btn .arr{transition:transform .2s;display:inline-block}
 .expand-btn.open .arr{transform:rotate(90deg)}
 .holdings-row{display:none}
 .holdings-row.show{display:table-row}
 .holdings-inner{padding:8px 11px 10px 28px;background:var(--bg4)}
-.h-title{font-size:9px;color:var(--text3);letter-spacing:1.5px;text-transform:uppercase;margin-bottom:6px}
+.h-title{font-size:9.5px;color:var(--text3);letter-spacing:1.5px;text-transform:uppercase;margin-bottom:6px}
 .h-list{display:flex;flex-wrap:wrap;gap:5px}
-.h-item{display:flex;align-items:center;gap:5px;background:var(--bg3);border:1px solid var(--border);border-radius:2px;padding:3px 7px;font-size:10px}
-.h-w{color:var(--accent);font-size:9px;min-width:30px;text-align:right}
+.h-item{display:flex;align-items:center;gap:5px;background:var(--bg3);border:1px solid var(--border);border-radius:2px;padding:3px 7px;font-size:10.5px}
+.h-w{color:var(--accent);font-size:9.5px;min-width:30px;text-align:right}
 .h-sym{color:var(--text);font-weight:500}
-.h-nm{color:var(--text3);font-size:9px}
+.h-nm{color:var(--text3);font-size:9.5px}
 
 /* ── POSITION CALC ── */
 .calc-wrap{display:grid;grid-template-columns:320px 1fr;gap:10px}
 .cpanel{background:var(--bg2);border:1px solid var(--border);border-radius:4px;padding:15px}
-.c-ttl{font-size:9px;letter-spacing:2px;text-transform:uppercase;color:var(--accent);margin-bottom:13px;font-weight:500}
+.c-ttl{font-size:9.5px;letter-spacing:2px;text-transform:uppercase;color:var(--accent);margin-bottom:13px;font-weight:500}
 .dir-tog{display:flex;border:1px solid var(--border2);border-radius:3px;overflow:hidden;margin-bottom:14px}
-.dir-b{flex:1;padding:8px;border:none;background:var(--bg3);color:var(--text3);font-family:var(--mono);font-size:10px;letter-spacing:2px;text-transform:uppercase;cursor:pointer;transition:all .15s;font-weight:500}
+.dir-b{flex:1;padding:8px;border:none;background:var(--bg3);color:var(--text3);font-family:var(--mono);font-size:10.5px;letter-spacing:2px;text-transform:uppercase;cursor:pointer;transition:all .15s;font-weight:500}
 .dir-b.long.on{background:var(--gdim);color:var(--green)}
 .dir-b.short.on{background:var(--rdim);color:var(--red)}
 .fg{margin-bottom:11px}
-.fl{font-size:8.5px;letter-spacing:1.5px;text-transform:uppercase;color:var(--text3);margin-bottom:4px;display:block}
-.fi{width:100%;padding:8px 10px;background:var(--bg3);border:1px solid var(--border2);border-radius:2px;color:var(--text);font-family:var(--mono);font-size:12px;outline:none;transition:border .15s}
+.fl{font-size:9px;letter-spacing:1.5px;text-transform:uppercase;color:var(--text3);margin-bottom:4px;display:block}
+.fi{width:100%;padding:8px 10px;background:var(--bg3);border:1px solid var(--border2);border-radius:2px;color:var(--text);font-family:var(--mono);font-size:12.5px;outline:none;transition:border .15s}
 .fi:focus{border-color:var(--accent)}
 .fi::placeholder{color:var(--text3)}
 .fr{display:grid;grid-template-columns:1fr 1fr;gap:7px}
 .res{background:var(--bg3);border:1px solid var(--border);border-radius:3px;padding:13px;margin-top:13px}
-.res-big{font-size:30px;font-weight:600;color:var(--accent);letter-spacing:-1px;line-height:1}
-.res-lbl{font-size:8.5px;color:var(--text3);letter-spacing:2px;text-transform:uppercase;margin-top:3px}
+.res-big{font-size:30.5px;font-weight:600;color:var(--accent);letter-spacing:-1px;line-height:1}
+.res-lbl{font-size:9px;color:var(--text3);letter-spacing:2px;text-transform:uppercase;margin-top:3px}
 .res-sub{display:flex;gap:18px;margin-top:11px;padding-top:11px;border-top:1px solid var(--border)}
 .ri{display:flex;flex-direction:column;gap:2px}
-.rv{font-size:12px;font-weight:500}
-.rl{font-size:8.5px;color:var(--text3);letter-spacing:1px;text-transform:uppercase}
+.rv{font-size:12.5px;font-weight:500}
+.rl{font-size:9px;color:var(--text3);letter-spacing:1px;text-transform:uppercase}
 .stops-panel{background:var(--bg2);border:1px solid var(--border);border-radius:4px;overflow:hidden}
 .stops-hdr{display:flex;align-items:center;padding:9px 13px;background:var(--bg3);border-bottom:1px solid var(--border);gap:7px}
-.s-tab{padding:4px 11px;border:1px solid var(--border2);border-radius:2px;background:transparent;color:var(--text3);font-family:var(--mono);font-size:9.5px;letter-spacing:1px;cursor:pointer;transition:all .15s;text-transform:uppercase}
+.s-tab{padding:4px 11px;border:1px solid var(--border2);border-radius:2px;background:transparent;color:var(--text3);font-family:var(--mono);font-size:10px;letter-spacing:1px;cursor:pointer;transition:all .15s;text-transform:uppercase}
 .s-tab.on{border-color:var(--accent);color:var(--accent);background:var(--adim)}
 .stops-body{padding:11px}
-.sr-hdr{display:grid;grid-template-columns:100px 90px 1fr 1fr 1fr;gap:6px;padding:4px 0;font-size:8.5px;color:var(--text3);letter-spacing:1px;text-transform:uppercase;border-bottom:1px solid var(--border)}
+.sr-hdr{display:grid;grid-template-columns:100px 90px 1fr 1fr 1fr;gap:6px;padding:4px 0;font-size:9px;color:var(--text3);letter-spacing:1px;text-transform:uppercase;border-bottom:1px solid var(--border)}
 .sr{display:grid;grid-template-columns:100px 90px 1fr 1fr 1fr;gap:6px;padding:7px 0;border-bottom:1px solid rgba(28,37,53,.4);align-items:center}
 .sr:last-child{border-bottom:none}
-.sr-lbl{font-size:10px;color:var(--text2)}
-.sr-price{font-size:13px;font-weight:600}
+.sr-lbl{font-size:10.5px;color:var(--text2)}
+.sr-price{font-size:13.5px;font-weight:600}
 .sr-entry{color:var(--accent)}
 .sr-mid{color:var(--amber)}
 .sr-fin{color:var(--red)}
-.sr-shares{font-size:10px;color:var(--text2)}
-.sr-pct{font-size:10px}
-.sr-pnl{font-size:10px}
+.sr-shares{font-size:10.5px;color:var(--text2)}
+.sr-pct{font-size:10.5px}
+.sr-pnl{font-size:10.5px}
 .scale-viz{position:relative;height:48px;margin:10px 0 4px;border-top:1px solid var(--border)}
-.viz-note{font-size:9px;color:var(--text3);letter-spacing:1px;text-transform:uppercase;margin-bottom:6px}
+.viz-note{font-size:9.5px;color:var(--text3);letter-spacing:1px;text-transform:uppercase;margin-bottom:6px}
 
 /* ── TOAST ── */
-.toast{position:fixed;bottom:20px;right:20px;background:var(--bg2);border:1px solid var(--accent);border-radius:3px;padding:10px 16px;font-size:10px;color:var(--accent);letter-spacing:1px;z-index:9999;transform:translateY(10px);opacity:0;transition:all .25s;pointer-events:none}
+.toast{position:fixed;bottom:20px;right:20px;background:var(--bg2);border:1px solid var(--accent);border-radius:3px;padding:10px 16px;font-size:10.5px;color:var(--accent);letter-spacing:1px;z-index:9999;transform:translateY(10px);opacity:0;transition:all .25s;pointer-events:none}
 .toast.show{transform:translateY(0);opacity:1}
 .snap-flash{position:fixed;inset:0;background:rgba(0,200,255,.08);z-index:9998;pointer-events:none;opacity:0;transition:opacity .08s}
 .snap-flash.on{opacity:1}
 
 /* ── LOADING STATE ── */
-.loading{color:var(--text3);font-size:10px;letter-spacing:1px;padding:14px;text-align:center;animation:fade .8s infinite alternate}
+.loading{color:var(--text3);font-size:10.5px;letter-spacing:1px;padding:14px;text-align:center;animation:fade .8s infinite alternate}
 @keyframes fade{from{opacity:.4}to{opacity:1}}
 
 /* ── RESPONSIVE ── */
@@ -203,7 +216,7 @@ td:first-child,td.l{text-align:left}
 <!-- ══ HEADER ══════════════════════════════════════════ -->
 <div class="hdr">
   <div class="hdr-l">
-    <div class="logo">MCC<em>//</em>PRO</div>
+    <div class="logo">Market Command Centre</div>
     <div class="hdr-meta">
       <div id="hdr-date" style="letter-spacing:1px">—</div>
       <strong id="hdr-time">—</strong>
@@ -212,10 +225,7 @@ td:first-child,td.l{text-align:left}
   </div>
   <div class="hdr-r">
     <span id="lastUpdatedBadge" style="font-size:9px;color:var(--text3);letter-spacing:1px;padding:4px 8px;background:var(--bg3);border:1px solid var(--border);border-radius:2px">LOADING DATA...</span>
-    <button class="btn btn-snap" onclick="captureSnap()">📷 &nbsp;SNAPSHOT</button>
-    <button class="btn btn-x" onclick="shareX()">𝕏 &nbsp;SHARE</button>
-    <button class="btn btn-copy" onclick="copyClip()">📋 &nbsp;ONENOTE</button>
-  </div>
+      </div>
 </div>
 
 <!-- ══ QUOTE BANNER ═════════════════════════════════════ -->
@@ -322,12 +332,12 @@ td:first-child,td.l{text-align:left}
   <!-- Sectors side by side -->
   <div class="g2" style="margin-bottom:9px">
     <div class="card">
-      <div class="card-lbl">▸ S&P 500 Sub-Sector — Ranked by 1W <span style="color:var(--text3);font-size:9px;margin-left:6px">▸ SPY = benchmark row</span></div>
+      <div class="card-lbl">▸ S&P 500 Sub-Sector — Ranked by 1W</div>
       <table><thead><tr><th class="l">#</th><th class="l">Sector</th><th>1D%</th><th>1W%</th><th>52W Hi%</th><th>YTD%</th><th>5D</th><th class="l">Holdings</th></tr></thead>
       <tbody id="t-sector"><tr><td colspan="8" class="loading">Loading...</td></tr></tbody></table>
     </div>
     <div class="card">
-      <div class="card-lbl">▸ S&P 500 EW Sub-Sector — Ranked by 1W <span style="color:var(--text3);font-size:9px;margin-left:6px">▸ SPY = benchmark row</span></div>
+      <div class="card-lbl">▸ S&P 500 EW Sub-Sector — Ranked by 1W</div>
       <table><thead><tr><th class="l">#</th><th class="l">EW Sector</th><th>1D%</th><th>1W%</th><th>52W Hi%</th><th>YTD%</th><th>5D</th><th class="l">Holdings</th></tr></thead>
       <tbody id="t-sectorew"><tr><td colspan="8" class="loading">Loading...</td></tr></tbody></table>
     </div>
@@ -416,6 +426,19 @@ td:first-child,td.l{text-align:left}
 </div>
 
 </div><!-- /wrap -->
+<!-- ══ TRADINGVIEW CHART MODAL ════════════════════ -->
+<div id="tv-modal" onclick="if(event.target===this)closeChart()">
+  <div id="tv-modal-box">
+    <div id="tv-modal-hdr">
+      <div id="tv-modal-title">—</div>
+      <button onclick="closeChart()">✕ &nbsp;CLOSE</button>
+    </div>
+    <div id="tv-frame-wrap">
+      <iframe id="tv-frame" frameborder="0" allowtransparency="true" scrolling="no" allowfullscreen></iframe>
+    </div>
+  </div>
+</div>
+
 
 
 
@@ -781,6 +804,13 @@ function pct(v,badge=false){
   if(badge){const bc=v>0?'up-b':v<0?'dn-b':'neu-b';return`<span class="${bc}">${p}${v.toFixed(2)}%</span>`}
   return`<span class="${cls}">${p}${v.toFixed(2)}%</span>`;
 }
+function pctBar(v,badge=false,maxPct=15){
+  const inner=pct(v,badge);
+  if(v===null||v===undefined)return inner;
+  const w=Math.min(Math.abs(v)/maxPct*100,100);
+  const col=v>0?'var(--green)':v<0?'var(--red)':'var(--text3)';
+  return`<div class="pct-wrap">${inner}<div class="pct-bar" style="width:${w.toFixed(1)}%;background:${col}"></div></div>`;
+}
 function bps(v){
   if(v===null||v===undefined)return'<span class="neu">—</span>';
   const p=v>0?'+':'',cls=v>0?'up':v<0?'dn':'neu';
@@ -816,67 +846,24 @@ function holdRow(id,sym){
 // TABLE BUILDERS
 // ═══════════════════════════════════════════════════════
 function buildRows(data, tbodyId, opts={}) {
-  const {rank=false, hasPrice=true, isYield=false, hasHoldings=false, spyBenchmark=false} = opts;
+  const {rank=false, hasPrice=true, isYield=false, hasHoldings=false, benchmarkSym=null} = opts;
   const tbody = document.getElementById(tbodyId);
   tbody.innerHTML='';
 
-  // Inject SPY benchmark row at the top for sector tables
-  if(spyBenchmark){
-    const spy = DATA.etfmain.find(e=>e.sym==='SPY');
-    if(spy){
-      const hid='hr'+(holdingIdx++);
-      const tr=document.createElement('tr');
-      tr.className='spy-bench';
-      tr.innerHTML=`<td class="l" style="padding-left:10px"><span style="font-size:9px;letter-spacing:1px;color:var(--accent);background:rgba(0,200,255,0.1);border:1px solid rgba(0,200,255,0.25);padding:2px 6px;border-radius:2px">BENCHMARK</span></td>
-        <td class="l"><span class="tn">S&P 500 ETF</span><span class="ts">SPY</span></td>
-        <td>${pct(spy.d1)}</td>
-        <td>${pct(spy.w1,true)}</td>
-        <td>${pct(spy.hi52)}</td>
-        <td>${pct(spy.ytd)}</td>`;
-      const sparkTd=document.createElement('td');
-      sparkTd.style.cssText='text-align:center;padding:4px 8px';
-      sparkTd.appendChild(spark(spy.spark));
-      tr.appendChild(sparkTd);
-      if(hasHoldings){
-        const hTd=document.createElement('td');hTd.className='l';
-        const h=HOLDINGS['SPY'];
-        if(h){
-          hTd.innerHTML=`<button class="expand-btn" id="btn${hid}" onclick="toggleH('${hid}','SPY')"><span class="arr">▸</span> TOP 10</button>`;
-        } else { hTd.innerHTML='<span style="color:var(--text3);font-size:9px">—</span>'; }
-        tr.appendChild(hTd);
-        tbody.appendChild(tr);
-        if(h){
-          const holdTr=document.createElement('tr');
-          holdTr.className='holdings-row spy-bench-hold';
-          holdTr.id='hold'+hid;
-          holdTr.innerHTML=`<td colspan="8" style="padding:0"><div class="holdings-inner">
-            <div class="h-title">TOP 10 HOLDINGS BY WEIGHT — SPY (S&P 500 BENCHMARK)</div>
-            <div class="h-list">${h.map(x=>`<div class="h-item"><span class="h-w">${x.w.toFixed(1)}%</span><span class="h-sym">${x.s}</span><span class="h-nm">${x.n}</span></div>`).join('')}</div>
-          </div></td>`;
-          tbody.appendChild(holdTr);
-        }
-      } else {
-        tbody.appendChild(tr);
-      }
-      // Divider
-      const divTr=document.createElement('tr');
-      divTr.innerHTML=`<td colspan="8" style="padding:0;height:1px;background:linear-gradient(90deg,var(--accent),transparent);opacity:0.25"></td>`;
-      tbody.appendChild(divTr);
-    }
-  }
 
   data.forEach((item, i) => {
     const m = META[item.sym]||{name:item.sym,sym:item.sym};
     const displayName = item.name || m.name;
     const displayFlag = item.flag || m.flag || '';
     const flagStr = displayFlag ? displayFlag+' ' : '';
-    const nameHTML = `<td class="l"><span class="tn">${flagStr}${displayName}</span><span class="ts">${m.sym||item.sym}</span></td>`;
+    const nameHTML = `<td class="l"><span class="tn tn-link" onclick="openChart(${JSON.stringify(item.sym)},${JSON.stringify(displayName)})">${flagStr}${displayName}</span><span class="ts">${m.sym||item.sym}</span></td>`;
     const rankHTML = rank ? `<td class="l"><span class="rank ${i<3?'g':''}">${i+1}</span></td>` : '';
     const priceHTML = hasPrice && item.price!==undefined ? `<td>${fp(item.price, item.price<10?3:item.price<100?2:item.price>1000?0:2)}</td>` : '';
-    const d1HTML = isYield ? `<td>${bps(item.d1)}</td>` : `<td>${pct(item.d1)}</td>`;
+    const d1HTML = isYield ? `<td>${bps(item.d1)}</td>` : `<td>${pctBar(item.d1)}</td>`;
     
     const tr = document.createElement('tr');
-    tr.innerHTML = `${rankHTML}${nameHTML}${priceHTML}${d1HTML}<td>${pct(item.w1,true)}</td><td>${pct(item.hi52)}</td><td>${pct(item.ytd)}</td>`;
+    if(benchmarkSym && item.sym===benchmarkSym) tr.classList.add('bench-row');
+    tr.innerHTML = `${rankHTML}${nameHTML}${priceHTML}${d1HTML}<td>${pctBar(item.w1,true)}</td><td>${pctBar(item.hi52,false,30)}</td><td>${pctBar(item.ytd,false,20)}</td>`;
     const sparkTd = document.createElement('td');
     sparkTd.style.cssText='text-align:center;padding:4px 8px';
     sparkTd.appendChild(spark(item.spark));
@@ -898,7 +885,7 @@ function buildRows(data, tbodyId, opts={}) {
         const holdTr=document.createElement('tr');
         holdTr.className='holdings-row';
         holdTr.id='hold'+hid;
-        const colspan = spyBenchmark ? 8 : 9;
+        const colspan = (rank?1:0)+1+(hasPrice?1:0)+4+1+(hasHoldings?1:0);
         holdTr.innerHTML=`<td colspan="${colspan}" style="padding:0"><div class="holdings-inner">
           <div class="h-title">TOP 10 HOLDINGS BY WEIGHT — ${META[sym]?.name||sym}</div>
           <div class="h-list">${h.map(x=>`<div class="h-item"><span class="h-w">${x.w.toFixed(1)}%</span><span class="h-sym">${x.s}</span><span class="h-nm">${x.n}</span></div>`).join('')}</div>
@@ -933,8 +920,16 @@ function renderAll(d) {
   buildRows(d.global,    't-global',   {hasPrice:true});
   buildRows(d.etfmain,   't-etfmain',  {hasPrice:true,hasHoldings:true});
   buildRows(d.submarket, 't-submarket',{rank:true,hasPrice:true});
-  buildRows(d.sector,    't-sector',   {rank:true,hasPrice:false,hasHoldings:true,spyBenchmark:true});
-  buildRows(d.sectorew,  't-sectorew', {rank:true,hasPrice:false,hasHoldings:true,spyBenchmark:true});
+  const _spySec = d.etfmain ? d.etfmain.find(e=>e.sym==='SPY') : null;
+  let _secData = d.sector ? [...d.sector] : [];
+  if(_spySec && !_secData.find(e=>e.sym==='SPY')) _secData.push({..._spySec});
+  _secData.sort((a,b)=>(b.w1||0)-(a.w1||0));
+  buildRows(_secData, 't-sector', {rank:true,hasPrice:false,hasHoldings:true,benchmarkSym:'SPY'});
+  let _sectorewData = d.sectorew ? [...d.sectorew] : [];
+  const _rspData = d.etfmain ? d.etfmain.find(e=>e.sym==='RSP') : null;
+  if(_rspData && !_sectorewData.find(e=>e.sym==='RSP')) _sectorewData.push({..._rspData});
+  _sectorewData.sort((a,b)=>(b.w1||0)-(a.w1||0));
+  buildRows(_sectorewData, 't-sectorew', {rank:true,hasPrice:false,hasHoldings:true,benchmarkSym:'RSP'});
   buildRows((d.thematic||[]).slice(0,10), 't-thematic', {rank:true,hasPrice:true,hasHoldings:true});
   buildRows(d.country,   't-country',  {rank:true,hasPrice:true,hasHoldings:true});
 
@@ -943,9 +938,9 @@ function renderAll(d) {
   cb.innerHTML='';
   (d.crypto||[]).forEach(item=>{
     const tr=document.createElement('tr');
-    tr.innerHTML=`<td class="l"><span class="tn">${item.name||item.sym}</span><span class="ts">${item.sym}</span></td>
-      <td>$${fp(item.price,item.price<10?4:item.price<1000?2:0)}</td>
-      <td>${pct(item.d1)}</td><td>${pct(item.w1,true)}</td><td>${pct(item.hi52)}</td><td>${pct(item.ytd)}</td>`;
+    tr.innerHTML=`<td class="l"><span class="tn tn-link" onclick="openChart(${JSON.stringify(item.sym)},${JSON.stringify(item.name||item.sym)})">${item.name||item.sym}</span><span class="ts">${item.sym}</span></td>
+      <td>${fp(item.price,item.price<10?4:item.price<1000?2:0)}</td>
+      <td>${pctBar(item.d1)}</td><td>${pctBar(item.w1,true)}</td><td>${pctBar(item.hi52,false,30)}</td><td>${pctBar(item.ytd,false,20)}</td>`;
     const sd=document.createElement('td');sd.style.cssText='text-align:center;padding:4px 8px';sd.appendChild(spark(item.spark));
     tr.appendChild(sd);cb.appendChild(tr);
   });
@@ -1043,6 +1038,49 @@ COMMODITIES
 // ═══════════════════════════════════════════════════════
 // TOAST
 // ═══════════════════════════════════════════════════════
+// ═══════════════════════════════════════════════════
+// TRADINGVIEW CHART MODAL
+// ═══════════════════════════════════════════════════
+function toTvSym(raw) {
+  const MAP = {
+    'ES1!':'CME_MINI:ES1!','NQ1!':'CME_MINI:NQ1!',
+    'RTY1!':'CME_MINI:RTY1!','YM1!':'CBOT_MINI:YM1!',
+    'DX-Y.NYB':'TVC:DXY','CBOE:VIX':'CBOE:VIX','VIX':'CBOE:VIX',
+    'GC1!':'COMEX:GC1!','SI1!':'COMEX:SI1!','HG1!':'COMEX:HG1!',
+    'PL1!':'NYMEX:PL1!','PA1!':'NYMEX:PA1!','ALI1!':'COMEX:ALI1!',
+    'CL1!':'NYMEX:CL1!','NG1!':'NYMEX:NG1!',
+    'US2Y':'TVC:US02Y','US10Y':'TVC:US10Y','US30Y':'TVC:US30Y',
+    '^N225':'TVC:NI225','^KS11':'KRX:KOSPI','^NSEI':'NSE:NIFTY',
+    '000001.SS':'SSE:000001','000300.SS':'SSE:000300',
+    '^HSI':'HKEX:HSI','^FTSE':'TVC:UKX','^FCHI':'TVC:CAC40',
+    '^GDAXI':'TVC:DAX','DXY':'TVC:DXY','UKX':'TVC:UKX',
+    'BTC':'CRYPTOCAP:BTC','ETH':'CRYPTOCAP:ETH',
+    'SOL':'CRYPTOCAP:SOL','XRP':'CRYPTOCAP:XRP',
+  };
+  return MAP[raw] || raw;
+}
+function openChart(rawSym, name) {
+  const tvSym = toTvSym(rawSym);
+  document.getElementById('tv-modal-title').textContent = (name || rawSym) + '  ·  ' + tvSym;
+  const url = 'https://s.tradingview.com/widgetembed/?frameElementId=tv_frame'
+    + '&symbol=' + encodeURIComponent(tvSym)
+    + '&interval=D&hidesidetoolbar=0&symboledit=1&saveimage=0'
+    + '&toolbarbg=131722&studies=%5B%5D&theme=dark&style=1'
+    + '&timezone=exchange&withdateranges=1&showpopupbutton=1'
+    + '&studies_overrides=%7B%7D&overrides=%7B%7D'
+    + '&enabled_features=%5B%5D&disabled_features=%5B%5D&locale=en';
+  document.getElementById('tv-frame').src = url;
+  document.getElementById('tv-modal').classList.add('open');
+  document.body.style.overflow = 'hidden';
+}
+function closeChart() {
+  document.getElementById('tv-modal').classList.remove('open');
+  document.getElementById('tv-frame').src = '';
+  document.body.style.overflow = '';
+}
+document.addEventListener('keydown', function(e){ if(e.key==='Escape') closeChart(); });
+
+
 function toast(msg){
   const t=document.getElementById('toast');
   t.textContent=msg;t.classList.add('show');
