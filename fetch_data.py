@@ -313,30 +313,27 @@ def fetch_fear_greed():
 def fetch_naaim():
     """Scrape NAAIM Exposure Index — latest weekly reading."""
     try:
+        from bs4 import BeautifulSoup
         url = "https://www.naaim.org/programs/naaim-exposure-index/"
-        tables = pd.read_html(url, flavor='html5lib')
-        if not tables:
-            raise ValueError("No tables found on NAAIM page")
-        df = tables[0]
-        df.columns = [str(c).strip() for c in df.columns]
-        # Identify the exposure column (NAAIM Number / exposure value)
-        naaim_col = None
-        for col in df.columns:
-            if any(k in col.lower() for k in ('naaim', 'number', 'exposure')):
-                naaim_col = col
-                break
-        if naaim_col is None:
-            naaim_col = df.columns[1] if len(df.columns) > 1 else df.columns[0]
-        date_col = df.columns[0]
-        for _, row in df.iterrows():
-            try:
-                val = float(row[naaim_col])
-                if -200 <= val <= 300:
-                    date_str = str(row[date_col])
-                    print(f"  ✓ NAAIM: {val:.1f}% ({date_str})")
-                    return {'value': round(val, 1), 'date': date_str}
-            except (ValueError, TypeError):
-                continue
+        r = requests.get(url, timeout=15, headers={'User-Agent': 'Mozilla/5.0'})
+        r.raise_for_status()
+        soup = BeautifulSoup(r.text, 'html.parser')
+        table = soup.find('table')
+        if not table:
+            raise ValueError("No table found on NAAIM page")
+        rows = table.find_all('tr')
+        for row in rows[1:]:  # skip header row
+            cells = [td.get_text(strip=True) for td in row.find_all('td')]
+            if len(cells) >= 2:
+                for cell in cells[1:]:  # second column onwards is typically the exposure value
+                    try:
+                        val = float(cell.replace(',', ''))
+                        if -200 <= val <= 300:
+                            date_str = cells[0]
+                            print(f"  ✓ NAAIM: {val:.1f}% ({date_str})")
+                            return {'value': round(val, 1), 'date': date_str}
+                    except ValueError:
+                        continue
         raise ValueError("Could not parse NAAIM exposure value from table")
     except Exception as e:
         print(f"  ⚠ NAAIM fetch failed: {e}")
@@ -346,10 +343,23 @@ def fetch_naaim():
 def compute_sp500_breadth():
     """Download S&P 500 component data and compute breadth metrics."""
     try:
-        # Get S&P 500 component list from Wikipedia
+        from bs4 import BeautifulSoup
+        # Get S&P 500 component list from Wikipedia using built-in html.parser
         print("  Fetching S&P 500 component list...")
-        sp_df = pd.read_html('https://en.wikipedia.org/wiki/List_of_S%26P_500_companies', flavor='html5lib')[0]
-        tickers = [t.replace('.', '-') for t in sp_df['Symbol'].tolist()]
+        r = requests.get('https://en.wikipedia.org/wiki/List_of_S%26P_500_companies',
+                         timeout=15, headers={'User-Agent': 'Mozilla/5.0'})
+        r.raise_for_status()
+        soup = BeautifulSoup(r.text, 'html.parser')
+        table = soup.find('table', {'id': 'constituents'})
+        if not table:
+            table = soup.find('table')
+        tickers = []
+        for row in table.find_all('tr')[1:]:
+            cells = row.find_all('td')
+            if cells:
+                tickers.append(cells[0].get_text(strip=True).replace('.', '-'))
+        if not tickers:
+            raise ValueError("No tickers found in Wikipedia table")
         print(f"  Downloading {len(tickers)} tickers (1 year of daily closes)...")
         raw = yf.download(tickers, period='1y', interval='1d',
                           auto_adjust=True, progress=False, threads=True)
