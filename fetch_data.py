@@ -3,6 +3,7 @@ import time
 import datetime
 import sys
 import csv
+import math
 import xml.etree.ElementTree as ET
 from pathlib import Path
 from io import StringIO
@@ -35,7 +36,7 @@ YIELDS      = ['^TNX','^TYX']
 DX_VIX      = ['DX-Y.NYB','^VIX']
 CRYPTO_YF   = ['BTC-USD','ETH-USD','SOL-USD','XRP-USD']
 
-# ── LOAD FROM tickers.json (single source of truth) ─────────────────────────────────
+# ── LOAD FROM tickers.json ────────────────────────────────────────────────────────────────────
 config_path = Path(__file__).parent / 'tickers.json'
 if config_path.exists():
     with open(config_path) as f:
@@ -69,39 +70,27 @@ TICKER_REMAP = {
 
 # ── 2-YEAR TREASURY YIELD ─────────────────────────────────────────────────────────────────────────────
 def fetch_treasury_2y():
-    """Fetch 2-year Treasury yield. Tries FRED CSV first, then Treasury XML."""
-
-    # Method 1: FRED public CSV (no API key needed)
     try:
         url = 'https://fred.stlouisfed.org/graph/fredgraph.csv?id=DGS2'
         resp = requests.get(url, timeout=15, headers={'User-Agent': 'Mozilla/5.0'})
         resp.raise_for_status()
         reader = csv.reader(StringIO(resp.text))
         rows = list(reader)
-        # Last row with a real value (skip "." missing values)
         rate = None
-        for row in reversed(rows[1:]):  # skip header
+        for row in reversed(rows[1:]):
             if len(row) == 2 and row[1] not in ('.', '', 'VALUE'):
                 rate = float(row[1])
                 break
         if rate is not None:
             print(f"  \u2713 US2Y = {rate}% (FRED)")
-            return {
-                'sym': 'US2Y', 'price': round(rate, 4),
-                'd1': 0.0, 'w1': 0.0, 'hi52': 0.0, 'ytd': 0.0,
-                'spark': [0.0, 0.0, 0.0, 0.0, 0.0],
-            }
+            return {'sym': 'US2Y', 'price': round(rate, 4), 'd1': 0.0, 'w1': 0.0, 'hi52': 0.0, 'ytd': 0.0, 'spark': [0.0]*5}
     except Exception as e:
-        print(f"  FRED CSV failed: {e} — trying Treasury XML...")
-
-    # Method 2: US Treasury XML feed
+        print(f"  FRED CSV failed: {e}")
     try:
         now = datetime.datetime.utcnow()
-        url = (
-            "https://home.treasury.gov/resource-center/data-chart-center/"
-            "interest-rates/pages/xml?data=daily_treasury_yield_curve"
-            f"&field_tdr_date_value={now.strftime('%Y%m')}"
-        )
+        url = ("https://home.treasury.gov/resource-center/data-chart-center/"
+               "interest-rates/pages/xml?data=daily_treasury_yield_curve"
+               f"&field_tdr_date_value={now.strftime('%Y%m')}")
         resp = requests.get(url, timeout=15)
         resp.raise_for_status()
         ns_m = 'http://schemas.microsoft.com/ado/2007/08/dataservices/metadata'
@@ -109,95 +98,126 @@ def fetch_treasury_2y():
         root = ET.fromstring(resp.content)
         entries = root.findall(f'.//{{{ns_m}}}properties')
         if entries:
-            last = entries[-1]
-            val = last.find(f'{{{ns_d}}}BC_2YEAR')
+            val = entries[-1].find(f'{{{ns_d}}}BC_2YEAR')
             if val is not None and val.text:
                 rate = float(val.text)
                 print(f"  \u2713 US2Y = {rate}% (Treasury XML)")
-                return {
-                    'sym': 'US2Y', 'price': round(rate, 4),
-                    'd1': 0.0, 'w1': 0.0, 'hi52': 0.0, 'ytd': 0.0,
-                    'spark': [0.0, 0.0, 0.0, 0.0, 0.0],
-                }
+                return {'sym': 'US2Y', 'price': round(rate, 4), 'd1': 0.0, 'w1': 0.0, 'hi52': 0.0, 'ytd': 0.0, 'spark': [0.0]*5}
     except Exception as e:
-        print(f"  Treasury XML also failed: {e}")
-
-    print("  \u26a0 Could not fetch 2Y yield from any source")
+        print(f"  Treasury XML failed: {e}")
     return None
 
 # ── ETF HOLDINGS ──────────────────────────────────────────────────────────────────────────────────────
+def _safe_float(val):
+    """Convert val to float, return None if NaN/invalid."""
+    try:
+        f = float(val)
+        return None if math.isnan(f) else f
+    except Exception:
+        return None
+
+def _pct_from_val(val):
+    """Convert a weight value to percentage. Handles both decimal (0.07) and % (7.0) formats."""
+    f = _safe_float(val)
+    if f is None or f == 0:
+        return 0.0
+    # If value is between 0 and 1, treat as decimal fraction -> multiply by 100
+    if 0 < f <= 1.0:
+        return round(f * 100, 2)
+    # Otherwise treat as already-percentage
+    return round(f, 2)
+
 def fetch_etf_holdings(tickers):
-    """
-    Fetch top 10 holdings for each ETF using yfinance.
-    Returns dict: { 'SLV': [{s, n, w}, ...], ... }
-    Format matches HOLDINGS object in index.html: s=symbol, n=name, w=weight%
-    """
     holdings_map = {}
     total = len(tickers)
+    debug_done = False  # Print column debug for first ETF only
+
     for i, sym in enumerate(tickers):
         print(f"  Holdings [{i+1}/{total}] {sym}...", end=' ')
         try:
             t = yf.Ticker(sym)
             rows = []
 
-            # Try funds_data.top_holdings (most reliable for ETFs)
+            # ── Method 1: funds_data.top_holdings ────────────────────────────
             try:
                 fd = t.funds_data
                 if fd is not None:
                     th = fd.top_holdings
                     if th is not None and hasattr(th, 'iterrows') and not th.empty:
+
+                        # Debug: show actual columns for first ETF processed
+                        if not debug_done:
+                            cols = list(th.columns)
+                            idx0 = th.index[0] if len(th) > 0 else 'N/A'
+                            row0 = dict(th.iloc[0]) if len(th) > 0 else {}
+                            print(f"\n    [DEBUG] cols={cols} idx0={idx0!r} row0={row0}")
+                            debug_done = True
+
                         for idx, row in th.head(10).iterrows():
-                            # holdingName is the DataFrame INDEX, not a column
-                            n = str(idx).strip() if idx and str(idx) != 'nan' else ''
+                            # Index = holding name or ticker symbol
+                            n = str(idx).strip() if str(idx) not in ('', 'nan') else ''
                             s = ''
                             w = 0.0
-                            for sym_col in ['symbol', 'Symbol', 'ticker']:
+
+                            # Try to get symbol from columns
+                            for sym_col in ['symbol', 'Symbol', 'ticker', 'Ticker']:
                                 if sym_col in row.index:
-                                    s = str(row[sym_col]).strip()
+                                    v = str(row[sym_col]).strip()
+                                    if v and v != 'nan':
+                                        s = v
                                     break
-                            for pct_col in ['holdingPercent', 'holdingpercent', '% Assets', 'weight']:
+
+                            # Try known weight column names
+                            for pct_col in ['holdingPercent', 'holdingpercent',
+                                            'Holding Percent', '% Assets',
+                                            'weight', 'Weight', 'percent', 'Percent']:
                                 if pct_col in row.index:
-                                    try:
-                                        w = float(row[pct_col])
-                                        w = round(w * 100, 2) if w <= 1.0 else round(w, 2)
-                                    except Exception:
-                                        pass
+                                    w = _pct_from_val(row[pct_col])
                                     break
+
+                            # Fallback: grab first non-zero numeric column
+                            if w == 0.0:
+                                for col_name in row.index:
+                                    if col_name in ('symbol', 'Symbol', 'ticker',
+                                                    'holdingName', 'name', 'Name'):
+                                        continue
+                                    f = _safe_float(row[col_name])
+                                    if f and f > 0:
+                                        w = _pct_from_val(f)
+                                        break
+
                             if n or s:
                                 rows.append({'s': s, 'n': n or s, 'w': w})
-            except Exception:
-                pass
+            except Exception as e:
+                print(f"(funds_data err: {e})", end=' ')
 
-            # Fallback: info['holdings']
+            # ── Method 2: info['holdings'] fallback ───────────────────────────
             if not rows:
                 try:
                     info = t.info
                     for h in info.get('holdings', [])[:10]:
-                        s = h.get('symbol', '')
-                        n = h.get('holdingName', s)
-                        w = h.get('holdingPercent', 0)
-                        if w <= 1.0:
-                            w = round(w * 100, 2)
-                        else:
-                            w = round(w, 2)
-                        rows.append({'s': str(s), 'n': str(n), 'w': w})
-                except Exception:
-                    pass
+                        s = str(h.get('symbol', ''))
+                        n = str(h.get('holdingName', s))
+                        w = _pct_from_val(h.get('holdingPercent', 0))
+                        rows.append({'s': s, 'n': n, 'w': w})
+                except Exception as e:
+                    print(f"(info err: {e})", end=' ')
 
             if rows:
                 holdings_map[sym] = rows
-                print(f"\u2713 {len(rows)} holdings")
+                w_sample = [r['w'] for r in rows[:3]]
+                print(f"\u2713 {len(rows)} holdings (w={w_sample})")
             else:
                 print("\u2014")
 
         except Exception as e:
             print(f"\u2717 {e}")
 
-        time.sleep(0.4)  # polite delay
+        time.sleep(0.4)
 
     return holdings_map
 
-# ── CORE METRIC EXTRACTION ─────────────────────────────────────────────────────────────────────────────────
+# ── CORE METRICS ───────────────────────────────────────────────────────────────────────────────────────────────
 def pct(new, old):
     if old and old != 0:
         return round((new - old) / abs(old) * 100, 2)
@@ -207,11 +227,9 @@ def fetch_batch(tickers, retries=3):
     results = {}
     for attempt in range(retries):
         try:
-            data = yf.download(
-                tickers, period='1y', interval='1d',
-                group_by='ticker', auto_adjust=True,
-                progress=False, threads=True,
-            )
+            data = yf.download(tickers, period='1y', interval='1d',
+                               group_by='ticker', auto_adjust=True,
+                               progress=False, threads=True)
             break
         except Exception as e:
             print(f"  Attempt {attempt+1} failed: {e}")
@@ -303,17 +321,14 @@ def fetch_all():
                 print(f"  \u26a0 No data for {yf_sym}")
         time.sleep(1)
 
-    # 2-Year Treasury yield (prepend so order is 2Y, 10Y, 30Y)
     print("Fetching 2Y Treasury yield...")
     rec_2y = fetch_treasury_2y()
     if rec_2y:
         output['yields'].insert(0, rec_2y)
 
-    # Sort ranked tables by 1W desc
     for key in ('country', 'sector', 'sectorew', 'thematic', 'submarket'):
         output[key].sort(key=lambda x: x.get('w1', 0), reverse=True)
 
-    # Fetch ETF holdings for all relevant categories
     holdings_tickers = list(dict.fromkeys(
         ETF_MAIN + SUBMARKET + SECTOR + SECTOR_EW + THEMATIC + COUNTRY
     ))
