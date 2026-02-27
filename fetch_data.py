@@ -704,6 +704,24 @@ def fetch_all(prices_only=False):
     for key in ('country', 'sector', 'sectorew', 'thematic', 'submarket'):
         output[key].sort(key=lambda x: x.get('w1', 0), reverse=True)
 
+    # In prices-only mode, if any Massive-backed section came back empty (API failure),
+    # preserve existing data rather than overwriting with empty arrays.
+    if prices_only and existing:
+        massive_sections = ['etfmain', 'submarket', 'sector', 'sectorew',
+                            'thematic', 'country', 'crypto', 'global', 'yields']
+        for key in massive_sections:
+            if not output.get(key) and existing.get(key):
+                output[key] = existing[key]
+                print(f"  \u26a0 {key}: Massive API returned no data \u2014 preserving existing values")
+        # dxvix: restore VIX from existing if it's missing from this run
+        vix_in_output = any(r.get('sym') == 'CBOE:VIX' for r in output.get('dxvix', []))
+        if not vix_in_output and existing.get('dxvix'):
+            vix_rec = next((r for r in existing['dxvix'] if r.get('sym') == 'CBOE:VIX'), None)
+            if vix_rec:
+                output['dxvix'].append(vix_rec)
+                output['dxvix'].sort(key=lambda x: {'DX-Y.NYB': 0, 'CBOE:VIX': 1}.get(x.get('sym', ''), 99))
+                print(f"  \u26a0 dxvix/VIX: Massive API returned no data \u2014 preserving existing value")
+
     if not prices_only:
         holdings_tickers = list(dict.fromkeys(
             ETF_MAIN + SUBMARKET + SECTOR + SECTOR_EW + THEMATIC + COUNTRY
