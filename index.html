@@ -784,7 +784,7 @@ let DIR = 'long', STOPS = 2;
 // ═══════════════════════════════════════════════════════
 function tick() {
   const now = new Date();
-  const hkt = new Date(now.toLocaleString('en-US',{timeZone:'Asia/Hong_Kong'}));
+  const hkt = new Date(now.toLocaleString('en-AU',{timeZone:'Australia/Sydney'}));
   const D=['SUN','MON','TUE','WED','THU','FRI','SAT'];
   const M=['JAN','FEB','MAR','APR','MAY','JUN','JUL','AUG','SEP','OCT','NOV','DEC'];
   document.getElementById('hdr-date').textContent=`${D[hkt.getDay()]} · ${hkt.getDate()} ${M[hkt.getMonth()]} ${hkt.getFullYear()}`;
