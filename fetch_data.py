@@ -649,8 +649,10 @@ def fetch_all(prices_only=False):
         ('dxvix',     ['DX-Y.NYB']),  # DXY stays on yfinance (no Massive equivalent)
     ]
 
-    use_massive = bool(MASSIVE_API_KEY)
-    if use_massive:
+    use_massive = bool(MASSIVE_API_KEY) and not prices_only
+    if prices_only:
+        print(f"Prices-only mode — using yfinance to avoid Massive API rate limits")
+    elif use_massive:
         print(f"✓ MASSIVE_API_KEY found — using Massive API for ETFs & crypto")
     else:
         print(f"⚠ MASSIVE_API_KEY not set — falling back to yfinance for all tickers")
