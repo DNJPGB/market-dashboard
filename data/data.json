@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-03-13T21:48:13Z",
+  "generated_at": "2026-03-13T22:23:47Z",
   "futures": [
     {
       "sym": "ES1!",
@@ -364,22 +364,6 @@
     }
   ],
   "etfmain": [
-    {
-      "sym": "SPY",
-      "price": 662.29,
-      "d1": -0.57,
-      "w1": -1.5,
-      "hi52": -5.09,
-      "ytd": -3.06,
-      "spark": [
-        0.88,
-        -0.16,
-        -0.13,
-        -1.52,
-        -0.57
-      ],
-      "ema_uptrend": false
-    },
     {
       "sym": "QQQ",
       "price": 593.72,
@@ -2762,17 +2746,17 @@
   "crypto": [
     {
       "sym": "BTC",
-      "price": 71119.0781,
-      "d1": 0.89,
-      "w1": 7.81,
-      "hi52": -43.64,
-      "ytd": -19.85,
+      "price": 70777.2969,
+      "d1": 0.4,
+      "w1": 7.29,
+      "hi52": -43.92,
+      "ytd": -20.23,
       "spark": [
         3.69,
         2.23,
         0.4,
         0.41,
-        0.89
+        0.4
       ],
       "ema_uptrend": true,
       "id": "bitcoin",
@@ -2780,17 +2764,17 @@
     },
     {
       "sym": "ETH",
-      "price": 2104.1128,
-      "d1": 1.49,
-      "w1": 8.65,
-      "hi52": -57.52,
-      "ytd": -29.87,
+      "price": 2089.0215,
+      "d1": 0.77,
+      "w1": 7.87,
+      "hi52": -57.83,
+      "ytd": -30.38,
       "spark": [
         2.91,
         2.22,
         0.71,
         1.05,
-        1.49
+        0.77
       ],
       "ema_uptrend": true,
       "id": "ethereum",
@@ -2798,17 +2782,17 @@
     },
     {
       "sym": "SOL",
-      "price": 88.6065,
-      "d1": 2.0,
-      "w1": 8.55,
-      "hi52": -65.01,
-      "ytd": -30.1,
+      "price": 88.0503,
+      "d1": 1.36,
+      "w1": 7.87,
+      "hi52": -65.23,
+      "ytd": -30.54,
       "spark": [
         4.06,
         1.06,
         0.85,
         0.35,
-        2.0
+        1.36
       ],
       "ema_uptrend": false,
       "id": "solana",
@@ -2816,17 +2800,17 @@
     },
     {
       "sym": "XRP",
-      "price": 1.3998,
-      "d1": 1.09,
-      "w1": 4.35,
-      "hi52": -61.65,
-      "ytd": -25.46,
+      "price": 1.3951,
+      "d1": 0.75,
+      "w1": 4.0,
+      "hi52": -61.78,
+      "ytd": -25.71,
       "spark": [
         1.52,
         1.81,
         -0.11,
         -0.02,
-        1.09
+        0.75
       ],
       "ema_uptrend": false,
       "id": "ripple",
@@ -4082,58 +4066,6 @@
         "w": 3.62
       }
     ],
-    "RSPG": [
-      {
-        "s": "TPL",
-        "n": "Texas Pacific Land Corp",
-        "w": 6.69
-      },
-      {
-        "s": "BKR",
-        "n": "Baker Hughes Co Class A",
-        "w": 5.15
-      },
-      {
-        "s": "SLB",
-        "n": "SLB Ltd",
-        "w": 4.88
-      },
-      {
-        "s": "TRGP",
-        "n": "Targa Resources Corp",
-        "w": 4.88
-      },
-      {
-        "s": "XOM",
-        "n": "Exxon Mobil Corp",
-        "w": 4.84
-      },
-      {
-        "s": "OXY",
-        "n": "Occidental Petroleum Corp",
-        "w": 4.82
-      },
-      {
-        "s": "KMI",
-        "n": "Kinder Morgan Inc Class P",
-        "w": 4.75
-      },
-      {
-        "s": "HAL",
-        "n": "Halliburton Co",
-        "w": 4.7
-      },
-      {
-        "s": "WMB",
-        "n": "Williams Companies Inc",
-        "w": 4.69
-      },
-      {
-        "s": "CVX",
-        "n": "Chevron Corp",
-        "w": 4.68
-      }
-    ],
     "RSPT": [
       {
         "s": "SNDK",
@@ -4394,58 +4326,6 @@
         "w": 0.27
       }
     ],
-    "RSPU": [
-      {
-        "s": "EIX",
-        "n": "Edison International",
-        "w": 3.7
-      },
-      {
-        "s": "PCG",
-        "n": "PG&E Corp",
-        "w": 3.59
-      },
-      {
-        "s": "AES",
-        "n": "The AES Corp",
-        "w": 3.56
-      },
-      {
-        "s": "ED",
-        "n": "Consolidated Edison Inc",
-        "w": 3.36
-      },
-      {
-        "s": "AEP",
-        "n": "American Electric Power Co Inc",
-        "w": 3.34
-      },
-      {
-        "s": "PPL",
-        "n": "PPL Corp",
-        "w": 3.34
-      },
-      {
-        "s": "CNP",
-        "n": "CenterPoint Energy Inc",
-        "w": 3.3
-      },
-      {
-        "s": "PNW",
-        "n": "Pinnacle West Capital Corp",
-        "w": 3.3
-      },
-      {
-        "s": "AEE",
-        "n": "Ameren Corp",
-        "w": 3.3
-      },
-      {
-        "s": "SO",
-        "n": "Southern Co",
-        "w": 3.3
-      }
-    ],
     "RSPM": [
       {
         "s": "FCX",
@@ -4600,58 +4480,6 @@
         "s": "FRT",
         "n": "Federal Realty Investment Trust",
         "w": 3.35
-      }
-    ],
-    "RSPS": [
-      {
-        "s": "BG",
-        "n": "Bunge Global SA",
-        "w": 3.25
-      },
-      {
-        "s": "HSY",
-        "n": "The Hershey Co",
-        "w": 3.24
-      },
-      {
-        "s": "CL",
-        "n": "Colgate-Palmolive Co",
-        "w": 3.14
-      },
-      {
-        "s": "CHD",
-        "n": "Church & Dwight Co Inc",
-        "w": 3.1
-      },
-      {
-        "s": "PM",
-        "n": "Philip Morris International Inc",
-        "w": 3.08
-      },
-      {
-        "s": "DG",
-        "n": "Dollar General Corp",
-        "w": 3.06
-      },
-      {
-        "s": "CLX",
-        "n": "Clorox Co",
-        "w": 3.06
-      },
-      {
-        "s": "SYY",
-        "n": "Sysco Corp",
-        "w": 3.06
-      },
-      {
-        "s": "TGT",
-        "n": "Target Corp",
-        "w": 2.97
-      },
-      {
-        "s": "PG",
-        "n": "Procter & Gamble Co",
-        "w": 2.95
       }
     ],
     "RSPC": [
@@ -4914,58 +4742,6 @@
         "w": 4.68
       }
     ],
-    "WGMI": [
-      {
-        "s": "IREN",
-        "n": "IREN Ltd",
-        "w": 20.53
-      },
-      {
-        "s": "CIFR",
-        "n": "Cipher Digital Inc",
-        "w": 19.88
-      },
-      {
-        "s": "HUT",
-        "n": "Hut 8 Corp",
-        "w": 6.9
-      },
-      {
-        "s": "WULF",
-        "n": "TeraWulf Inc",
-        "w": 6.45
-      },
-      {
-        "s": "RIOT",
-        "n": "Riot Platforms Inc",
-        "w": 5.75
-      },
-      {
-        "s": "CORZ",
-        "n": "Core Scientific Inc Ordinary Shares - New",
-        "w": 5.31
-      },
-      {
-        "s": "APLD",
-        "n": "Applied Digital Corp",
-        "w": 4.99
-      },
-      {
-        "s": "MARA",
-        "n": "MARA Holdings Inc",
-        "w": 4.38
-      },
-      {
-        "s": "CLSK",
-        "n": "Cleanspark Inc",
-        "w": 4.33
-      },
-      {
-        "s": "BITF.TO",
-        "n": "Bitfarms Ltd",
-        "w": 4.18
-      }
-    ],
     "COPX": [
       {
         "s": "5713.T",
@@ -5070,58 +4846,6 @@
         "w": 1.41
       }
     ],
-    "FFTY": [
-      {
-        "s": "OLA.TO",
-        "n": "Orla Mining Ltd",
-        "w": 4.12
-      },
-      {
-        "s": "CDE",
-        "n": "Coeur Mining Inc",
-        "w": 3.9
-      },
-      {
-        "s": "IMG.TO",
-        "n": "Iamgold Corp",
-        "w": 3.75
-      },
-      {
-        "s": "FIX",
-        "n": "Comfort Systems USA Inc",
-        "w": 3.52
-      },
-      {
-        "s": "VRT",
-        "n": "Vertiv Holdings Co Class A",
-        "w": 3.4
-      },
-      {
-        "s": "STRL",
-        "n": "Sterling Infrastructure Inc",
-        "w": 3.38
-      },
-      {
-        "s": "AU",
-        "n": "Anglogold Ashanti PLC",
-        "w": 3.28
-      },
-      {
-        "s": "ANAB",
-        "n": "AnaptysBio Inc",
-        "w": 3.26
-      },
-      {
-        "s": "MU",
-        "n": "Micron Technology Inc",
-        "w": 3.18
-      },
-      {
-        "s": "AEM.TO",
-        "n": "Agnico Eagle Mines Ltd",
-        "w": 3.17
-      }
-    ],
     "LIT": [
       {
         "s": "RIO",
@@ -5172,58 +4896,6 @@
         "s": "300750.SZ",
         "n": "Contemporary Amperex Technology Co Ltd Class A",
         "w": 2.99
-      }
-    ],
-    "NANR": [
-      {
-        "s": "XOM",
-        "n": "Exxon Mobil Corp",
-        "w": 10.39
-      },
-      {
-        "s": "CVX",
-        "n": "Chevron Corp",
-        "w": 7.17
-      },
-      {
-        "s": "NEM",
-        "n": "Newmont Corp",
-        "w": 4.13
-      },
-      {
-        "s": "AEM.TO",
-        "n": "Agnico Eagle Mines Ltd",
-        "w": 3.68
-      },
-      {
-        "s": "CTVA",
-        "n": "Corteva Inc",
-        "w": 2.93
-      },
-      {
-        "s": "FCX",
-        "n": "Freeport-McMoRan Inc",
-        "w": 2.85
-      },
-      {
-        "s": "COP",
-        "n": "ConocoPhillips",
-        "w": 2.85
-      },
-      {
-        "s": "ABX.TO",
-        "n": "Barrick Mining Corp",
-        "w": 2.49
-      },
-      {
-        "s": "WPM.TO",
-        "n": "Wheaton Precious Metals Corp",
-        "w": 2.15
-      },
-      {
-        "s": "NTR.TO",
-        "n": "Nutrien Ltd",
-        "w": 1.97
       }
     ],
     "OIH": [
@@ -5328,23 +5000,6 @@
         "s": "SLB",
         "n": "SLB Ltd",
         "w": 2.25
-      }
-    ],
-    "DBC": [
-      {
-        "s": "AGPXX",
-        "n": "Invesco Shrt-Trm Inv Gov&Agcy Instl",
-        "w": 29.2
-      },
-      {
-        "s": "TBLL",
-        "n": "Invesco Short Term Treasury ETF",
-        "w": 7.93
-      },
-      {
-        "s": "BRNN26",
-        "n": "Brent Crude Future May 26",
-        "w": 6.88
       }
     ],
     "PPH": [
@@ -5621,13 +5276,6 @@
         "w": 1.14
       }
     ],
-    "UUP": [
-      {
-        "s": "AGPXX",
-        "n": "Invesco Shrt-Trm Inv Gov&Agcy Instl",
-        "w": 48.26
-      }
-    ],
     "IYR": [
       {
         "s": "WELL",
@@ -5732,127 +5380,11 @@
         "w": 1.86
       }
     ],
-    "BBH": [
-      {
-        "s": "AMGN",
-        "n": "Amgen Inc",
-        "w": 17.14
-      },
-      {
-        "s": "GILD",
-        "n": "Gilead Sciences Inc",
-        "w": 16.71
-      },
-      {
-        "s": "VRTX",
-        "n": "Vertex Pharmaceuticals Inc",
-        "w": 9.58
-      },
-      {
-        "s": "REGN",
-        "n": "Regeneron Pharmaceuticals Inc",
-        "w": 7.5
-      },
-      {
-        "s": "ARGX",
-        "n": "argenx SE ADR",
-        "w": 4.12
-      },
-      {
-        "s": "NTRA",
-        "n": "Natera Inc",
-        "w": 3.72
-      },
-      {
-        "s": "ALNY",
-        "n": "Alnylam Pharmaceuticals Inc",
-        "w": 3.55
-      },
-      {
-        "s": "IQV",
-        "n": "IQVIA Holdings Inc",
-        "w": 3.45
-      },
-      {
-        "s": "INSM",
-        "n": "Insmed Inc",
-        "w": 3.39
-      },
-      {
-        "s": "BIIB",
-        "n": "Biogen Inc",
-        "w": 3.3
-      }
-    ],
     "HYG": [
       {
         "s": "XTSLA",
         "n": "BlackRock Cash Funds Treasury SL Agency",
         "w": 1.25
-      }
-    ],
-    "DBA": [
-      {
-        "s": "AGPXX",
-        "n": "Invesco Shrt-Trm Inv Gov&Agcy Instl",
-        "w": 32.04
-      },
-      {
-        "s": "TBLL",
-        "n": "Invesco Short Term Treasury ETF",
-        "w": 8.0
-      }
-    ],
-    "ESPO": [
-      {
-        "s": "0700.HK",
-        "n": "Tencent Holdings Ltd",
-        "w": 7.7
-      },
-      {
-        "s": "7974.T",
-        "n": "Nintendo Co Ltd",
-        "w": 6.95
-      },
-      {
-        "s": "NTES",
-        "n": "NetEase Inc ADR",
-        "w": 6.73
-      },
-      {
-        "s": "EA",
-        "n": "Electronic Arts Inc",
-        "w": 6.7
-      },
-      {
-        "s": "GME",
-        "n": "GameStop Corp Class A",
-        "w": 5.54
-      },
-      {
-        "s": "RBLX",
-        "n": "Roblox Corp Ordinary Shares - Class A",
-        "w": 5.37
-      },
-      {
-        "s": "TTWO",
-        "n": "Take-Two Interactive Software Inc",
-        "w": 5.36
-      },
-      {
-        "s": "ALL.AX",
-        "n": "Aristocrat Leisure Ltd",
-        "w": 5.07
-      },
-      {
-        "s": "7832.T",
-        "n": "BANDAI NAMCO Holdings Inc",
-        "w": 5.04
-      },
-      {
-        "s": "3293.TWO",
-        "n": "International Games System Co Ltd",
-        "w": 4.89
       }
     ],
     "IDRV": [
@@ -6115,58 +5647,6 @@
         "w": 4.83
       }
     ],
-    "BOUT": [
-      {
-        "s": "WT",
-        "n": "WisdomTree Inc",
-        "w": 4.61
-      },
-      {
-        "s": "WBI",
-        "n": "WaterBridge Infrastructure LLC Ordinary Shares - Class A",
-        "w": 4.59
-      },
-      {
-        "s": "SNDK",
-        "n": "SanDisk Corp Ordinary Shares",
-        "w": 4.32
-      },
-      {
-        "s": "AVT",
-        "n": "Avnet Inc",
-        "w": 4.31
-      },
-      {
-        "s": "GLNG",
-        "n": "Golar LNG Ltd",
-        "w": 4.28
-      },
-      {
-        "s": "FLEX",
-        "n": "Flex Ltd",
-        "w": 4.23
-      },
-      {
-        "s": "MDLN",
-        "n": "Medline Inc Ordinary Shares - Class A",
-        "w": 4.21
-      },
-      {
-        "s": "CDNL",
-        "n": "Cardinal Infrastructure Group Inc Ordinary Shares- Class A",
-        "w": 4.14
-      },
-      {
-        "s": "GLW",
-        "n": "Corning Inc",
-        "w": 4.08
-      },
-      {
-        "s": "CNX",
-        "n": "CNX Resources Corp",
-        "w": 3.9
-      }
-    ],
     "XSD": [
       {
         "s": "MU",
@@ -6373,65 +5853,6 @@
         "s": "CGNX",
         "n": "Cognex Corp",
         "w": 3.08
-      }
-    ],
-    "UFO": [
-      {
-        "s": "PL",
-        "n": "Planet Labs PBC Class A",
-        "w": 5.77
-      },
-      {
-        "s": "MDA.TO",
-        "n": "MDA Space Ltd",
-        "w": 5.63
-      },
-      {
-        "s": "GRMN",
-        "n": "Garmin Ltd",
-        "w": 5.01
-      },
-      {
-        "s": "VSAT",
-        "n": "Viasat Inc",
-        "w": 4.99
-      },
-      {
-        "s": "SATS",
-        "n": "EchoStar Corp Class A",
-        "w": 4.62
-      },
-      {
-        "s": "RKLB",
-        "n": "Rocket Lab Corp",
-        "w": 4.54
-      },
-      {
-        "s": "SESGL",
-        "n": "SES SA DR",
-        "w": 4.49
-      },
-      {
-        "s": "SIRI",
-        "n": "Sirius XM Holdings Inc",
-        "w": 4.15
-      },
-      {
-        "s": "ASTS",
-        "n": "AST SpaceMobile Inc Ordinary Shares - Class A",
-        "w": 3.9
-      },
-      {
-        "s": "9412.T",
-        "n": "SKY Perfect JSAT Holdings Inc",
-        "w": 3.69
-      }
-    ],
-    "WEAT": [
-      {
-        "s": "FGTXX",
-        "n": "Goldman Sachs FS Government Instl",
-        "w": 25.28
       }
     ],
     "ITB": [
@@ -6798,58 +6219,6 @@
         "w": 2.72
       }
     ],
-    "BUZZ": [
-      {
-        "s": "NFLX",
-        "n": "Netflix Inc",
-        "w": 3.69
-      },
-      {
-        "s": "PYPL",
-        "n": "PayPal Holdings Inc",
-        "w": 3.4
-      },
-      {
-        "s": "AMZN",
-        "n": "Amazon.com Inc",
-        "w": 3.14
-      },
-      {
-        "s": "MSTR",
-        "n": "Strategy Inc Class A",
-        "w": 3.13
-      },
-      {
-        "s": "PLTR",
-        "n": "Palantir Technologies Inc Ordinary Shares - Class A",
-        "w": 3.09
-      },
-      {
-        "s": "SMCI",
-        "n": "Super Micro Computer Inc",
-        "w": 3.09
-      },
-      {
-        "s": "MU",
-        "n": "Micron Technology Inc",
-        "w": 3.04
-      },
-      {
-        "s": "GME",
-        "n": "GameStop Corp Class A",
-        "w": 3.03
-      },
-      {
-        "s": "HOOD",
-        "n": "Robinhood Markets Inc Class A",
-        "w": 2.97
-      },
-      {
-        "s": "MSFT",
-        "n": "Microsoft Corp",
-        "w": 2.96
-      }
-    ],
     "URA": [
       {
         "s": "CCO.TO",
@@ -6947,58 +6316,6 @@
         "s": "8035.T",
         "n": "Tokyo Electron Ltd",
         "w": 1.56
-      }
-    ],
-    "IPO": [
-      {
-        "s": "KVUE",
-        "n": "Kenvue Inc",
-        "w": 11.68
-      },
-      {
-        "s": "CRWV",
-        "n": "CoreWeave Inc Ordinary Shares - Class A",
-        "w": 10.01
-      },
-      {
-        "s": "RDDT",
-        "n": "Reddit Inc Class A Shares",
-        "w": 6.87
-      },
-      {
-        "s": "ARM",
-        "n": "ARM Holdings PLC ADR",
-        "w": 6.66
-      },
-      {
-        "s": "NXT",
-        "n": "Nextpower Inc Class A",
-        "w": 6.32
-      },
-      {
-        "s": "ALAB",
-        "n": "Astera Labs Inc",
-        "w": 6.15
-      },
-      {
-        "s": "VIK",
-        "n": "Viking Holdings Ltd",
-        "w": 5.41
-      },
-      {
-        "s": "CAVA",
-        "n": "Cava Group Inc",
-        "w": 3.92
-      },
-      {
-        "s": "AHR",
-        "n": "American Healthcare REIT Inc Ordinary Shares",
-        "w": 3.92
-      },
-      {
-        "s": "ULS",
-        "n": "UL Solutions Inc Class A common stock",
-        "w": 2.99
       }
     ],
     "KIE": [
@@ -7105,58 +6422,6 @@
         "w": 3.4
       }
     ],
-    "ARKK": [
-      {
-        "s": "TSLA",
-        "n": "Tesla Inc",
-        "w": 10.36
-      },
-      {
-        "s": "CRSP",
-        "n": "CRISPR Therapeutics AG",
-        "w": 6.96
-      },
-      {
-        "s": "TEM",
-        "n": "Tempus AI Inc Class A common stock",
-        "w": 5.32
-      },
-      {
-        "s": "ROKU",
-        "n": "Roku Inc Class A",
-        "w": 4.69
-      },
-      {
-        "s": "SHOP",
-        "n": "Shopify Inc Registered Shs -A- Subord Vtg",
-        "w": 4.5
-      },
-      {
-        "s": "COIN",
-        "n": "Coinbase Global Inc Ordinary Shares - Class A",
-        "w": 4.09
-      },
-      {
-        "s": "HOOD",
-        "n": "Robinhood Markets Inc Class A",
-        "w": 4.08
-      },
-      {
-        "s": "BEAM",
-        "n": "Beam Therapeutics Inc",
-        "w": 3.8
-      },
-      {
-        "s": "RBLX",
-        "n": "Roblox Corp Ordinary Shares - Class A",
-        "w": 3.78
-      },
-      {
-        "s": "AMD",
-        "n": "Advanced Micro Devices Inc",
-        "w": 3.73
-      }
-    ],
     "XRT": [
       {
         "s": "CASY",
@@ -7207,65 +6472,6 @@
         "s": "ULTA",
         "n": "Ulta Beauty Inc",
         "w": 1.64
-      }
-    ],
-    "BLOK": [
-      {
-        "s": "WULF",
-        "n": "TeraWulf Inc",
-        "w": 4.19
-      },
-      {
-        "s": "CIFR",
-        "n": "Cipher Digital Inc",
-        "w": 3.84
-      },
-      {
-        "s": "GLXY",
-        "n": "Galaxy Digital Inc Ordinary Shares - Class A",
-        "w": 3.73
-      },
-      {
-        "s": "HUT",
-        "n": "Hut 8 Corp",
-        "w": 3.65
-      },
-      {
-        "s": "8473.T",
-        "n": "SBI Holdings Inc",
-        "w": 3.4
-      },
-      {
-        "s": "HOOD",
-        "n": "Robinhood Markets Inc Class A",
-        "w": 3.29
-      },
-      {
-        "s": "OPRA",
-        "n": "Opera Ltd ADR",
-        "w": 3.23
-      },
-      {
-        "s": "BBBY",
-        "n": "Bed Bath & Beyond Inc",
-        "w": 3.17
-      },
-      {
-        "s": "COIN",
-        "n": "Coinbase Global Inc Ordinary Shares - Class A",
-        "w": 3.16
-      },
-      {
-        "s": "NU",
-        "n": "Nu Holdings Ltd Ordinary Shares Class A",
-        "w": 3.05
-      }
-    ],
-    "MSOS": [
-      {
-        "s": "CURA.TO",
-        "n": "Curaleaf Holdings Inc",
-        "w": 8.95
       }
     ],
     "AIQ": [
@@ -7528,58 +6734,6 @@
         "w": 2.86
       }
     ],
-    "IBUY": [
-      {
-        "s": "FIGS",
-        "n": "FIGS Inc Class A",
-        "w": 5.38
-      },
-      {
-        "s": "LQDT",
-        "n": "Liquidity Services Inc",
-        "w": 3.55
-      },
-      {
-        "s": "RVLV",
-        "n": "Revolve Group Inc Class A",
-        "w": 2.99
-      },
-      {
-        "s": "EBAY",
-        "n": "eBay Inc",
-        "w": 2.96
-      },
-      {
-        "s": "ABNB",
-        "n": "Airbnb Inc Ordinary Shares - Class A",
-        "w": 2.91
-      },
-      {
-        "s": "MSM",
-        "n": "MSC Industrial Direct Co Inc Class A",
-        "w": 2.86
-      },
-      {
-        "s": "CVNA",
-        "n": "Carvana Co Class A",
-        "w": 2.85
-      },
-      {
-        "s": "CART",
-        "n": "Maplebear Inc",
-        "w": 2.72
-      },
-      {
-        "s": "EXPE",
-        "n": "Expedia Group Inc",
-        "w": 2.66
-      },
-      {
-        "s": "ETSY",
-        "n": "Etsy Inc",
-        "w": 2.4
-      }
-    ],
     "CLOU": [
       {
         "s": "AKAM",
@@ -7788,65 +6942,6 @@
         "w": 3.83
       }
     ],
-    "XSW": [
-      {
-        "s": "ADEA",
-        "n": "Adeia Inc",
-        "w": 1.44
-      },
-      {
-        "s": "YOU",
-        "n": "Clear Secure Inc Ordinary Shares Class A",
-        "w": 1.28
-      },
-      {
-        "s": "OS",
-        "n": "OneStream Inc Class A common stock",
-        "w": 1.21
-      },
-      {
-        "s": "RNG",
-        "n": "RingCentral Inc Class A",
-        "w": 1.12
-      },
-      {
-        "s": "HUT",
-        "n": "Hut 8 Corp",
-        "w": 1.09
-      },
-      {
-        "s": "CWAN",
-        "n": "Clearwater Analytics Holdings Inc Class A",
-        "w": 1.02
-      },
-      {
-        "s": "DJCO",
-        "n": "Daily Journal Corp",
-        "w": 0.99
-      },
-      {
-        "s": "RIOT",
-        "n": "Riot Platforms Inc",
-        "w": 0.99
-      },
-      {
-        "s": "ATEN",
-        "n": "A10 Networks Inc",
-        "w": 0.98
-      },
-      {
-        "s": "AUR",
-        "n": "Aurora Innovation Inc Class A",
-        "w": 0.98
-      }
-    ],
-    "BTF": [
-      {
-        "s": "FXFXX",
-        "n": "First American Treasury Obligs X",
-        "w": 8.14
-      }
-    ],
     "SKYY": [
       {
         "s": "CRWV",
@@ -7897,58 +6992,6 @@
         "s": "AKAM",
         "n": "Akamai Technologies Inc",
         "w": 3.28
-      }
-    ],
-    "GREK": [
-      {
-        "s": "ETE.AT",
-        "n": "National Bank of Greece SA",
-        "w": 14.45
-      },
-      {
-        "s": "EUROB.AT",
-        "n": "Eurobank SA",
-        "w": 11.67
-      },
-      {
-        "s": "TPEIR.AT",
-        "n": "Piraeus Bank SA",
-        "w": 10.29
-      },
-      {
-        "s": "ALPHA.AT",
-        "n": "Alpha Bank SA",
-        "w": 9.17
-      },
-      {
-        "s": "PPC.AT",
-        "n": "Public Power Corp SA",
-        "w": 4.72
-      },
-      {
-        "s": "HTO.AT",
-        "n": "Hellenic Telecommunication Organization SA",
-        "w": 4.26
-      },
-      {
-        "s": "MOH.AT",
-        "n": "Motor Oil (Hellas) Corinth Refineries SA",
-        "w": 4.13
-      },
-      {
-        "s": "GEKTERNA.AT",
-        "n": "GEK Terna Holding Real Estate Construction SA",
-        "w": 3.96
-      },
-      {
-        "s": "OPAP.AT",
-        "n": "OPAP Holding SA",
-        "w": 3.66
-      },
-      {
-        "s": "BELA.AT",
-        "n": "Jumbo SA",
-        "w": 3.61
       }
     ],
     "ARGT": [
@@ -9561,7 +8604,7 @@
   },
   "breadth": {
     "fear_greed": {
-      "score": 21.2,
+      "score": 20.0,
       "rating": "Extreme Fear"
     },
     "naaim": {
@@ -9569,15 +8612,15 @@
       "date": "03/11/2026"
     },
     "advance_decline": {
-      "advancers": 111,
-      "decliners": 391
+      "advancers": 257,
+      "decliners": 243
     },
     "new_high_low": {
-      "new_highs": 28,
-      "new_lows": 37
+      "new_highs": 34,
+      "new_lows": 23
     },
-    "pct_above_sma20": 20.9,
-    "pct_above_sma50": 31.8,
-    "pct_above_sma200": 50.4
+    "pct_above_sma20": 22.1,
+    "pct_above_sma50": 32.0,
+    "pct_above_sma200": 49.8
   }
 }
