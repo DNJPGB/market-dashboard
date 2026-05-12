@@ -1,27 +1,27 @@
 {
-  "generated_at": "2026-05-12T22:45:13Z",
+  "generated_at": "2026-05-12T22:55:43Z",
   "futures": [
     {
       "sym": "ES1!",
-      "price": 7426.0,
-      "d1": -0.14,
+      "price": 7425.5,
+      "d1": -0.15,
       "w1": 1.9,
       "hi52": -0.39,
-      "ytd": 7.62,
+      "ytd": 7.61,
       "spark": [
         1.4,
         -0.36,
         0.76,
         0.24,
-        -0.14
+        -0.15
       ],
       "ema_uptrend": true
     },
     {
       "sym": "NQ1!",
-      "price": 29173.5,
+      "price": 29172.5,
       "d1": -0.85,
-      "w1": 3.69,
+      "w1": 3.68,
       "hi52": -1.04,
       "ytd": 14.92,
       "spark": [
@@ -35,33 +35,33 @@
     },
     {
       "sym": "RTY1!",
-      "price": 2851.7,
-      "d1": -0.94,
-      "w1": -0.04,
-      "hi52": -2.29,
-      "ytd": 13.05,
+      "price": 2851.3,
+      "d1": -0.96,
+      "w1": -0.06,
+      "hi52": -2.3,
+      "ytd": 13.03,
       "spark": [
         1.48,
         -1.6,
         0.66,
         0.39,
-        -0.94
+        -0.96
       ],
       "ema_uptrend": true
     },
     {
       "sym": "YM1!",
-      "price": 49882.0,
-      "d1": 0.18,
-      "w1": 0.95,
-      "hi52": -1.44,
-      "ytd": 2.6,
+      "price": 49877.0,
+      "d1": 0.17,
+      "w1": 0.93,
+      "hi52": -1.45,
+      "ytd": 2.59,
       "spark": [
         1.25,
         -0.67,
         -0.02,
         0.2,
-        0.18
+        0.17
       ],
       "ema_uptrend": true
     }
@@ -86,49 +86,49 @@
     },
     {
       "sym": "SI1!",
-      "price": 87.615,
-      "d1": 2.49,
-      "w1": 19.84,
-      "hi52": -27.77,
-      "ytd": 24.18,
+      "price": 87.525,
+      "d1": 2.39,
+      "w1": 19.72,
+      "hi52": -27.84,
+      "ytd": 24.05,
       "spark": [
         5.07,
         3.76,
         0.87,
         6.33,
-        2.49
+        2.39
       ],
       "ema_uptrend": true
     },
     {
       "sym": "HG1!",
-      "price": 6.638,
-      "d1": 3.5,
-      "w1": 11.69,
-      "hi52": -0.24,
-      "ytd": 17.7,
+      "price": 6.637,
+      "d1": 3.48,
+      "w1": 11.68,
+      "hi52": -0.26,
+      "ytd": 17.68,
       "spark": [
         3.26,
         -0.15,
         1.98,
         2.63,
-        3.5
+        3.48
       ],
       "ema_uptrend": true
     },
     {
       "sym": "PL1!",
-      "price": 2151.3999,
-      "d1": 1.7,
-      "w1": 9.73,
-      "hi52": -24.58,
-      "ytd": 1.21,
+      "price": 2148.0,
+      "d1": 1.54,
+      "w1": 9.55,
+      "hi52": -24.69,
+      "ytd": 1.05,
       "spark": [
         4.49,
         -0.03,
         -0.04,
         3.34,
-        1.7
+        1.54
       ],
       "ema_uptrend": true
     },
@@ -152,33 +152,33 @@
   "commod": [
     {
       "sym": "CL1!",
-      "price": 101.83,
-      "d1": 3.83,
-      "w1": -0.43,
-      "hi52": -14.77,
-      "ytd": 77.65,
+      "price": 101.85,
+      "d1": 3.85,
+      "w1": -0.41,
+      "hi52": -14.76,
+      "ytd": 77.69,
       "spark": [
         -7.03,
         -0.28,
         0.64,
         2.78,
-        3.83
+        3.85
       ],
       "ema_uptrend": true
     },
     {
       "sym": "NG1!",
-      "price": 2.829,
-      "d1": -2.78,
-      "w1": 1.47,
-      "hi52": -63.86,
-      "ytd": -21.81,
+      "price": 2.831,
+      "d1": -2.71,
+      "w1": 1.54,
+      "hi52": -63.83,
+      "ytd": -21.75,
       "spark": [
         -2.08,
         1.43,
         -0.43,
         5.55,
-        -2.78
+        -2.71
       ],
       "ema_uptrend": true
     }
@@ -393,22 +393,6 @@
         2.34,
         0.29,
         -0.85
-      ],
-      "ema_uptrend": true
-    },
-    {
-      "sym": "DIA",
-      "price": 497.89,
-      "d1": 0.16,
-      "w1": 1.0,
-      "hi52": -1.09,
-      "ytd": 3.38,
-      "spark": [
-        1.24,
-        -0.63,
-        0.04,
-        0.2,
-        0.16
       ],
       "ema_uptrend": true
     },
@@ -2762,17 +2746,17 @@
   "crypto": [
     {
       "sym": "BTC",
-      "price": 80641.2031,
-      "d1": -1.33,
-      "w1": 0.79,
-      "hi52": -36.1,
-      "ytd": -9.12,
+      "price": 80688.0938,
+      "d1": -1.27,
+      "w1": 0.85,
+      "hi52": -36.06,
+      "ytd": -9.07,
       "spark": [
         0.22,
         0.6,
         1.83,
         -0.5,
-        -1.33
+        -1.27
       ],
       "ema_uptrend": true,
       "id": "bitcoin",
@@ -2780,17 +2764,17 @@
     },
     {
       "sym": "ETH",
-      "price": 2284.53,
-      "d1": -2.34,
-      "w1": -0.29,
-      "hi52": -53.88,
-      "ytd": -23.86,
+      "price": 2283.52,
+      "d1": -2.39,
+      "w1": -0.33,
+      "hi52": -53.9,
+      "ytd": -23.89,
       "spark": [
         0.69,
         0.86,
         1.82,
         -1.25,
-        -2.34
+        -2.39
       ],
       "ema_uptrend": true,
       "id": "ethereum",
@@ -2798,17 +2782,17 @@
     },
     {
       "sym": "SOL",
-      "price": 94.71,
-      "d1": -2.71,
-      "w1": 7.13,
-      "hi52": -62.6,
-      "ytd": -25.28,
+      "price": 94.74,
+      "d1": -2.68,
+      "w1": 7.17,
+      "hi52": -62.58,
+      "ytd": -25.26,
       "spark": [
         4.01,
         1.3,
         3.52,
         0.96,
-        -2.71
+        -2.68
       ],
       "ema_uptrend": true,
       "id": "solana",
@@ -2816,17 +2800,17 @@
     },
     {
       "sym": "XRP",
-      "price": 1.442,
-      "d1": -2.36,
-      "w1": 3.96,
-      "hi52": -60.5,
-      "ytd": -23.21,
+      "price": 1.4407,
+      "d1": -2.45,
+      "w1": 3.86,
+      "hi52": -60.53,
+      "ytd": -23.28,
       "spark": [
         2.25,
         0.13,
         3.71,
         0.27,
-        -2.36
+        -2.45
       ],
       "ema_uptrend": true,
       "id": "ripple",
@@ -5859,52 +5843,52 @@
       {
         "s": "006400.KS",
         "n": "Samsung SDI Co Ltd",
-        "w": 8.4
+        "w": 8.18
       },
       {
         "s": "ALB",
         "n": "Albemarle Corp",
-        "w": 5.57
+        "w": 5.74
       },
       {
         "s": "PLS.AX",
         "n": "PLS Group Ltd",
-        "w": 5.03
+        "w": 5.1
       },
       {
         "s": "ABBN.SW",
         "n": "ABB Ltd",
-        "w": 4.46
-      },
-      {
-        "s": "012330.KS",
-        "n": "Hyundai Mobis Co Ltd",
-        "w": 4.03
+        "w": 4.61
       },
       {
         "s": "373220.KS",
         "n": "LG Energy Solution Ltd",
-        "w": 4.03
+        "w": 3.91
+      },
+      {
+        "s": "012330.KS",
+        "n": "Hyundai Mobis Co Ltd",
+        "w": 3.9
       },
       {
         "s": "03750",
         "n": "Contemporary Amperex Technology Co Ltd Ordinary Shares - Class H",
-        "w": 4.01
-      },
-      {
-        "s": "01211",
-        "n": "BYD Co Ltd Class H",
-        "w": 3.96
+        "w": 3.88
       },
       {
         "s": "051910.KS",
         "n": "LG Chem Ltd",
-        "w": 3.88
+        "w": 3.77
+      },
+      {
+        "s": "01211",
+        "n": "BYD Co Ltd Class H",
+        "w": 3.75
       },
       {
         "s": "9866.HK",
         "n": "NIO Inc Class A",
-        "w": 3.84
+        "w": 3.6
       }
     ],
     "ASHR": [
@@ -8059,42 +8043,42 @@
       {
         "s": "SAN.MC",
         "n": "Banco Santander SA",
-        "w": 17.91
+        "w": 17.74
       },
       {
         "s": "IBE.MC",
         "n": "Iberdrola SA",
-        "w": 14.47
+        "w": 14.32
       },
       {
         "s": "BBVA.MC",
         "n": "Banco Bilbao Vizcaya Argentaria SA",
-        "w": 11.51
+        "w": 11.58
       },
       {
         "s": "REP.MC",
         "n": "Repsol SA",
-        "w": 5.16
+        "w": 5.28
       },
       {
         "s": "CABK.MC",
         "n": "CaixaBank SA",
-        "w": 4.65
+        "w": 4.67
       },
       {
         "s": "ACS.MC",
         "n": "ACS Actividades de Construccion y Servicios SA",
-        "w": 4.51
+        "w": 4.57
       },
       {
         "s": "FER.AS",
         "n": "Ferrovial SE",
-        "w": 4.14
+        "w": 4.19
       },
       {
         "s": "ITX.MC",
         "n": "Industria De Diseno Textil SA Share From Split",
-        "w": 3.98
+        "w": 3.92
       },
       {
         "s": "AMS.MC",
@@ -8104,7 +8088,7 @@
       {
         "s": "SAB.MC",
         "n": "Banco de Sabadell SA",
-        "w": 3.66
+        "w": 3.61
       }
     ],
     "EUFN": [
@@ -8792,47 +8776,47 @@
       {
         "s": "RELIANCE.NS",
         "n": "Reliance Industries Ltd",
-        "w": 6.44
+        "w": 6.52
       },
       {
         "s": "ICICIBANK.NS",
         "n": "ICICI Bank Ltd",
-        "w": 4.89
+        "w": 4.86
       },
       {
         "s": "BHARTIARTL.NS",
         "n": "Bharti Airtel Ltd",
-        "w": 3.6
+        "w": 3.62
       },
       {
         "s": "XTSLA",
         "n": "BlackRock Cash Funds Treasury SL Agency",
-        "w": 3.34
+        "w": 3.19
       },
       {
         "s": "INFY.NS",
         "n": "Infosys Ltd",
-        "w": 2.81
+        "w": 2.87
       },
       {
         "s": "AXISBANK.BO",
         "n": "Axis Bank Ltd",
-        "w": 2.21
+        "w": 2.18
       },
       {
         "s": "M&M.NS",
         "n": "Mahindra & Mahindra Ltd",
-        "w": 2.18
+        "w": 2.16
       },
       {
         "s": "LT.NS",
         "n": "Larsen & Toubro Ltd",
-        "w": 2.05
+        "w": 2.03
       },
       {
         "s": "500034",
         "n": "Bajaj Finance Ltd",
-        "w": 1.93
+        "w": 1.96
       }
     ],
     "EWG": [
@@ -8943,12 +8927,12 @@
       {
         "s": "ASML.AS",
         "n": "ASML Holding NV",
-        "w": 7.28
+        "w": 7.36
       },
       {
         "s": "SIE.DE",
         "n": "Siemens AG",
-        "w": 2.95
+        "w": 2.98
       },
       {
         "s": "TTE.PA",
@@ -8956,19 +8940,14 @@
         "w": 2.44
       },
       {
-        "s": "SAP.DE",
-        "n": "SAP SE",
-        "w": 2.39
-      },
-      {
         "s": "SAN.MC",
         "n": "Banco Santander SA",
-        "w": 2.39
+        "w": 2.37
       },
       {
-        "s": "SU.PA",
-        "n": "Schneider Electric SE",
-        "w": 2.34
+        "s": "SAP.DE",
+        "n": "SAP SE",
+        "w": 2.36
       },
       {
         "s": "ALV.DE",
@@ -8976,61 +8955,66 @@
         "w": 2.3
       },
       {
+        "s": "SU.PA",
+        "n": "Schneider Electric SE",
+        "w": 2.29
+      },
+      {
         "s": "ENR.DE",
         "n": "Siemens Energy AG Ordinary Shares",
-        "w": 2.13
+        "w": 2.17
       },
       {
         "s": "IBE.MC",
         "n": "Iberdrola SA",
-        "w": 2.01
+        "w": 1.99
       },
       {
         "s": "MC.PA",
         "n": "Lvmh Moet Hennessy Louis Vuitton SE",
-        "w": 1.75
+        "w": 1.74
       }
     ],
     "EEM": [
       {
         "s": "2330.TW",
         "n": "Taiwan Semiconductor Manufacturing Co Ltd",
-        "w": 14.37
+        "w": 14.18
       },
       {
         "s": "005930.KS",
         "n": "Samsung Electronics Co Ltd",
-        "w": 6.11
+        "w": 6.01
       },
       {
         "s": "000660.KS",
         "n": "SK Hynix Inc",
-        "w": 4.03
+        "w": 4.04
       },
       {
         "s": "0700.HK",
         "n": "Tencent Holdings Ltd",
-        "w": 3.3
+        "w": 3.25
       },
       {
         "s": "9988.HK",
         "n": "Alibaba Group Holding Ltd Ordinary Shares",
-        "w": 2.41
+        "w": 2.36
       },
       {
         "s": "2308.TW",
         "n": "Delta Electronics Inc",
-        "w": 1.13
+        "w": 1.14
       },
       {
         "s": "2454.TW",
         "n": "MediaTek Inc",
-        "w": 1.05
+        "w": 1.07
       },
       {
         "s": "00939",
         "n": "China Construction Bank Corp Class H",
-        "w": 0.93
+        "w": 0.92
       },
       {
         "s": "HDFCBANK.NS",
@@ -9040,7 +9024,7 @@
       {
         "s": "RELIANCE.NS",
         "n": "Reliance Industries Ltd",
-        "w": 0.77
+        "w": 0.78
       }
     ],
     "EFA": [
@@ -9566,7 +9550,7 @@
   },
   "breadth": {
     "fear_greed": {
-      "score": 67.0,
+      "score": 66.6,
       "rating": "Greed"
     },
     "naaim": {
@@ -9574,15 +9558,15 @@
       "date": "05/06/2026"
     },
     "advance_decline": {
-      "advancers": 215,
-      "decliners": 288
+      "advancers": 259,
+      "decliners": 243
     },
     "new_high_low": {
-      "new_highs": 53,
-      "new_lows": 54
+      "new_highs": 37,
+      "new_lows": 40
     },
-    "pct_above_sma20": 42.3,
-    "pct_above_sma50": 50.1,
-    "pct_above_sma200": 55.0
+    "pct_above_sma20": 44.3,
+    "pct_above_sma50": 51.1,
+    "pct_above_sma200": 55.8
   }
 }
