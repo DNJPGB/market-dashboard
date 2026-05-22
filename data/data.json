@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-22T22:06:03Z",
+  "generated_at": "2026-05-22T22:53:11Z",
   "futures": [
     {
       "sym": "ES1!",
@@ -2762,17 +2762,17 @@
   "crypto": [
     {
       "sym": "BTC",
-      "price": 75781.5,
-      "d1": -2.27,
-      "w1": -2.13,
-      "hi52": -39.95,
-      "ytd": -14.6,
+      "price": 75636.7031,
+      "d1": -2.45,
+      "w1": -2.32,
+      "hi52": -40.07,
+      "ytd": -14.76,
       "spark": [
         -0.61,
         -0.26,
         0.92,
         0.11,
-        -2.27
+        -2.45
       ],
       "ema_uptrend": false,
       "id": "bitcoin",
@@ -2780,17 +2780,17 @@
     },
     {
       "sym": "ETH",
-      "price": 2074.8899,
-      "d1": -2.65,
-      "w1": -2.48,
-      "hi52": -58.11,
-      "ytd": -30.85,
+      "price": 2069.73,
+      "d1": -2.89,
+      "w1": -2.72,
+      "hi52": -58.22,
+      "ytd": -31.02,
       "spark": [
         0.04,
         -0.87,
         0.81,
         0.21,
-        -2.65
+        -2.89
       ],
       "ema_uptrend": false,
       "id": "ethereum",
@@ -2798,17 +2798,17 @@
     },
     {
       "sym": "SOL",
-      "price": 85.01,
-      "d1": -2.46,
-      "w1": -0.19,
-      "hi52": -66.43,
-      "ytd": -32.94,
+      "price": 84.83,
+      "d1": -2.67,
+      "w1": -0.4,
+      "hi52": -66.5,
+      "ytd": -33.08,
       "spark": [
         0.15,
         -1.28,
         2.18,
         1.3,
-        -2.46
+        -2.67
       ],
       "ema_uptrend": false,
       "id": "solana",
@@ -2816,17 +2816,17 @@
     },
     {
       "sym": "XRP",
-      "price": 1.3404,
-      "d1": -2.31,
-      "w1": -4.32,
-      "hi52": -63.28,
-      "ytd": -28.62,
+      "price": 1.3379,
+      "d1": -2.49,
+      "w1": -4.5,
+      "hi52": -63.35,
+      "ytd": -28.76,
       "spark": [
         -0.84,
         -2.06,
         0.35,
         0.49,
-        -2.31
+        -2.49
       ],
       "ema_uptrend": false,
       "id": "ripple",
@@ -9566,7 +9566,7 @@
   },
   "breadth": {
     "fear_greed": {
-      "score": 58.3,
+      "score": 58.6,
       "rating": "Greed"
     },
     "naaim": {
@@ -9574,15 +9574,15 @@
       "date": "05/20/2026"
     },
     "advance_decline": {
-      "advancers": 286,
-      "decliners": 212
+      "advancers": 352,
+      "decliners": 150
     },
     "new_high_low": {
-      "new_highs": 34,
-      "new_lows": 5
+      "new_highs": 49,
+      "new_lows": 1
     },
-    "pct_above_sma20": 52.1,
-    "pct_above_sma50": 54.9,
-    "pct_above_sma200": 57.6
+    "pct_above_sma20": 59.6,
+    "pct_above_sma50": 58.1,
+    "pct_above_sma200": 59.2
   }
 }
