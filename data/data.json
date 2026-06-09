@@ -1,67 +1,67 @@
 {
-  "generated_at": "2026-06-09T22:13:37Z",
+  "generated_at": "2026-06-09T23:15:04Z",
   "futures": [
     {
       "sym": "ES1!",
-      "price": 7378.25,
-      "d1": -0.51,
-      "w1": -3.22,
-      "hi52": -3.33,
-      "ytd": 6.92,
+      "price": 7376.5,
+      "d1": -0.53,
+      "w1": -3.24,
+      "hi52": -3.35,
+      "ytd": 6.9,
       "spark": [
         -0.68,
         0.39,
         -2.64,
         0.21,
-        -0.51
+        -0.53
       ],
       "ema_uptrend": true
     },
     {
       "sym": "NQ1!",
-      "price": 29055.25,
-      "d1": -1.36,
-      "w1": -5.4,
-      "hi52": -5.69,
-      "ytd": 14.46,
+      "price": 29076.75,
+      "d1": -1.28,
+      "w1": -5.33,
+      "hi52": -5.62,
+      "ytd": 14.54,
       "spark": [
         -0.26,
         -0.47,
         -4.79,
         1.48,
-        -1.36
+        -1.28
       ],
       "ema_uptrend": true
     },
     {
       "sym": "RTY1!",
-      "price": 2861.3999,
-      "d1": 0.07,
-      "w1": -2.54,
-      "hi52": -3.07,
-      "ytd": 13.44,
+      "price": 2858.6001,
+      "d1": -0.03,
+      "w1": -2.64,
+      "hi52": -3.16,
+      "ytd": 13.32,
       "spark": [
         -1.38,
         1.52,
         -3.56,
         0.87,
-        0.07
+        -0.03
       ],
       "ema_uptrend": true
     },
     {
       "sym": "YM1!",
-      "price": 50811.0,
-      "d1": -0.09,
-      "w1": -1.15,
-      "hi52": -2.0,
-      "ytd": 4.51,
+      "price": 50781.0,
+      "d1": -0.15,
+      "w1": -1.2,
+      "hi52": -2.06,
+      "ytd": 4.45,
       "spark": [
         -1.16,
         1.71,
         -1.42,
         -0.16,
-        -0.09
+        -0.15
       ],
       "ema_uptrend": true
     }
@@ -70,81 +70,81 @@
   "metals": [
     {
       "sym": "GC1!",
-      "price": 4277.2998,
-      "d1": -1.35,
-      "w1": -4.72,
-      "hi52": -23.43,
-      "ytd": -0.86,
+      "price": 4270.3999,
+      "d1": -1.51,
+      "w1": -4.87,
+      "hi52": -23.55,
+      "ytd": -1.02,
       "spark": [
         -1.17,
         0.88,
         -3.1,
         -0.03,
-        -1.35
+        -1.51
       ],
       "ema_uptrend": false
     },
     {
       "sym": "SI1!",
-      "price": 65.4,
-      "d1": -4.42,
-      "w1": -13.16,
-      "hi52": -46.08,
-      "ytd": -7.31,
+      "price": 65.245,
+      "d1": -4.65,
+      "w1": -13.37,
+      "hi52": -46.21,
+      "ytd": -7.53,
       "spark": [
         -2.44,
         0.41,
         -6.55,
         -0.75,
-        -4.42
+        -4.65
       ],
       "ema_uptrend": false
     },
     {
       "sym": "HG1!",
-      "price": 6.3525,
-      "d1": 0.36,
-      "w1": -4.47,
-      "hi52": -4.51,
-      "ytd": 12.63,
+      "price": 6.3435,
+      "d1": 0.22,
+      "w1": -4.6,
+      "hi52": -4.64,
+      "ytd": 12.47,
       "spark": [
         -2.53,
         0.46,
         -3.8,
         1.05,
-        0.36
+        0.22
       ],
       "ema_uptrend": true
     },
     {
       "sym": "PL1!",
-      "price": 1724.3,
-      "d1": -1.43,
-      "w1": -11.0,
-      "hi52": -39.55,
-      "ytd": -18.88,
+      "price": 1723.8,
+      "d1": -1.46,
+      "w1": -11.03,
+      "hi52": -39.57,
+      "ytd": -18.91,
       "spark": [
         -3.55,
         1.35,
         -5.39,
         -2.38,
-        -1.43
+        -1.46
       ],
       "ema_uptrend": false
     },
     {
       "sym": "PA1!",
-      "price": 1239.5,
-      "d1": 3.21,
-      "w1": -9.73,
-      "hi52": -42.88,
-      "ytd": -25.69,
+      "price": 1236.0,
+      "d1": 2.92,
+      "w1": -9.98,
+      "hi52": -43.04,
+      "ytd": -25.9,
       "spark": [
         -4.08,
         0.13,
         -5.44,
         -3.7,
-        3.21
+        2.92
       ],
       "ema_uptrend": false
     }
@@ -152,33 +152,33 @@
   "commod": [
     {
       "sym": "CL1!",
-      "price": 89.69,
-      "d1": -1.76,
-      "w1": -4.34,
-      "hi52": -24.93,
-      "ytd": 56.47,
+      "price": 88.94,
+      "d1": -2.58,
+      "w1": -5.14,
+      "hi52": -25.56,
+      "ytd": 55.16,
       "spark": [
         2.41,
         -3.1,
         -2.69,
         0.84,
-        -1.76
+        -2.58
       ],
       "ema_uptrend": false
     },
     {
       "sym": "NG1!",
-      "price": 3.139,
-      "d1": -0.25,
-      "w1": -0.88,
-      "hi52": -59.9,
-      "ytd": -13.24,
+      "price": 3.135,
+      "d1": -0.38,
+      "w1": -1.01,
+      "hi52": -59.95,
+      "ytd": -13.35,
       "spark": [
         1.48,
         3.8,
         -3.21,
         -2.54,
-        -0.25
+        -0.38
       ],
       "ema_uptrend": true
     }
@@ -316,17 +316,17 @@
     },
     {
       "sym": "^FTSE",
-      "price": 10227.3301,
-      "d1": -1.41,
-      "w1": -1.41,
-      "hi52": -6.47,
-      "ytd": 2.78,
+      "price": 10373.2002,
+      "d1": 0.05,
+      "w1": 0.33,
+      "hi52": -5.14,
+      "ytd": 4.24,
       "spark": [
+        0.33,
         -0.4,
         0.27,
         0.08,
-        0.05,
-        -1.41
+        0.05
       ],
       "ema_uptrend": false
     },
@@ -2762,17 +2762,17 @@
   "crypto": [
     {
       "sym": "BTC",
-      "price": 61763.7188,
-      "d1": -2.1,
-      "w1": -3.19,
-      "hi52": -51.06,
-      "ytd": -30.39,
+      "price": 61698.3789,
+      "d1": -2.21,
+      "w1": -3.3,
+      "hi52": -51.11,
+      "ytd": -30.47,
       "spark": [
         -4.51,
         -0.09,
         3.9,
         -0.24,
-        -2.1
+        -2.21
       ],
       "ema_uptrend": false,
       "id": "bitcoin",
@@ -2780,17 +2780,17 @@
     },
     {
       "sym": "ETH",
-      "price": 1650.15,
-      "d1": -2.37,
-      "w1": -6.75,
-      "hi52": -66.69,
-      "ytd": -45.0,
+      "price": 1637.85,
+      "d1": -3.09,
+      "w1": -7.44,
+      "hi52": -66.94,
+      "ytd": -45.41,
       "spark": [
         -10.66,
         -0.76,
         7.5,
         0.22,
-        -2.37
+        -3.09
       ],
       "ema_uptrend": false,
       "id": "ethereum",
@@ -2798,17 +2798,17 @@
     },
     {
       "sym": "SOL",
-      "price": 65.02,
-      "d1": -2.66,
-      "w1": -5.38,
-      "hi52": -74.32,
-      "ytd": -48.71,
+      "price": 64.91,
+      "d1": -2.82,
+      "w1": -5.54,
+      "hi52": -74.37,
+      "ytd": -48.79,
       "spark": [
         -7.61,
         -2.04,
         6.63,
         0.73,
-        -2.66
+        -2.82
       ],
       "ema_uptrend": false,
       "id": "solana",
@@ -2816,17 +2816,17 @@
     },
     {
       "sym": "XRP",
-      "price": 1.1362,
-      "d1": -2.74,
-      "w1": -2.61,
-      "hi52": -68.87,
-      "ytd": -39.5,
+      "price": 1.1346,
+      "d1": -2.88,
+      "w1": -2.75,
+      "hi52": -68.92,
+      "ytd": -39.58,
       "spark": [
         -6.02,
         -0.27,
         5.6,
         1.17,
-        -2.74
+        -2.88
       ],
       "ema_uptrend": false,
       "id": "ripple",
@@ -3554,7 +3554,7 @@
       {
         "s": "LRCX",
         "n": "Lam Research Corp",
-        "w": 2.46
+        "w": 2.47
       },
       {
         "s": "ORCL",
@@ -3571,7 +3571,7 @@
       {
         "s": "JNJ",
         "n": "Johnson & Johnson",
-        "w": 10.04
+        "w": 10.03
       },
       {
         "s": "ABBV",
@@ -3831,7 +3831,7 @@
       {
         "s": "NEM",
         "n": "Newmont Corp",
-        "w": 7.3
+        "w": 7.29
       },
       {
         "s": "NUE",
@@ -3861,7 +3861,7 @@
       {
         "s": "STLD",
         "n": "Steel Dynamics Inc",
-        "w": 4.38
+        "w": 4.37
       },
       {
         "s": "CTVA",
@@ -3871,7 +3871,7 @@
       {
         "s": "SHW",
         "n": "Sherwin-Williams Co",
-        "w": 4.27
+        "w": 4.26
       }
     ],
     "XLU": [
@@ -7182,7 +7182,7 @@
         "w": 1.71
       },
       {
-        "s": "VSCO",
+        "s": "VSXY",
         "n": "Victoria's Secret & Co",
         "w": 1.68
       },
@@ -9352,52 +9352,52 @@
       {
         "s": "BBCA.JK",
         "n": "PT Bank Central Asia Tbk",
-        "w": 17.22
+        "w": 17.76
       },
       {
         "s": "BBRI.JK",
         "n": "PT Bank Rakyat Indonesia (Persero) Tbk Registered Shs Series -B-",
-        "w": 10.76
+        "w": 10.59
       },
       {
         "s": "BMRI.JK",
         "n": "PT Bank Mandiri (Persero) Tbk",
-        "w": 7.83
+        "w": 8.7
       },
       {
         "s": "TLKM.JK",
         "n": "PT Telkom Indonesia (Persero) Tbk Registered Shs Series -B-",
-        "w": 7.72
+        "w": 7.61
       },
       {
         "s": "ASII.JK",
         "n": "PT Astra International Tbk",
-        "w": 4.49
+        "w": 3.7
       },
       {
         "s": "BBNI.JK",
         "n": "PT Bank Negara Indonesia (Persero) Tbk Registered Shs Series -B-",
-        "w": 3.28
+        "w": 3.62
       },
       {
         "s": "GOTO.JK",
         "n": "PT Goto Gojek Tokopedia Tbk",
-        "w": 2.59
+        "w": 3.41
       },
       {
-        "s": "AMMN.JK",
-        "n": "PT Amman Mineral Internasional Tbk",
-        "w": 2.24
+        "s": "BRPT.JK",
+        "n": "PT Barito Pacific Tbk",
+        "w": 2.86
       },
       {
         "s": "BRMS.JK",
         "n": "PT Bumi Resources Minerals Tbk",
-        "w": 2.09
+        "w": 2.58
       },
       {
-        "s": "CPIN.JK",
-        "n": "PT Charoen Pokphand Indonesia Tbk",
-        "w": 2.02
+        "s": "INDF.JK",
+        "n": "PT Indofood Sukses Makmur Tbk",
+        "w": 2.17
       }
     ],
     "EWJ": [
@@ -9559,7 +9559,7 @@
   },
   "breadth": {
     "fear_greed": {
-      "score": 40.1,
+      "score": 33.4,
       "rating": "Fear"
     },
     "naaim": {
@@ -9567,15 +9567,15 @@
       "date": "06/03/2026"
     },
     "advance_decline": {
-      "advancers": 181,
-      "decliners": 321
+      "advancers": 371,
+      "decliners": 131
     },
     "new_high_low": {
-      "new_highs": 24,
-      "new_lows": 16
+      "new_highs": 47,
+      "new_lows": 7
     },
-    "pct_above_sma20": 55.2,
-    "pct_above_sma50": 53.0,
-    "pct_above_sma200": 58.1
+    "pct_above_sma20": 64.5,
+    "pct_above_sma50": 58.6,
+    "pct_above_sma200": 61.1
   }
 }
