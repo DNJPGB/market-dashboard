@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-12T22:56:05Z",
+  "generated_at": "2026-06-12T23:12:42Z",
   "futures": [
     {
       "sym": "ES1!",
@@ -316,17 +316,17 @@
     },
     {
       "sym": "^FTSE",
-      "price": 10471.7197,
-      "d1": 1.63,
-      "w1": 1.0,
-      "hi52": -4.24,
-      "ytd": 5.23,
+      "price": 10303.9004,
+      "d1": 0.48,
+      "w1": -0.54,
+      "hi52": -5.77,
+      "ytd": 3.55,
       "spark": [
+        0.08,
         0.05,
         -1.41,
         0.27,
-        0.48,
-        1.63
+        0.48
       ],
       "ema_uptrend": false
     },
@@ -2762,17 +2762,17 @@
   "crypto": [
     {
       "sym": "BTC",
-      "price": 63474.7383,
-      "d1": -0.14,
-      "w1": 0.37,
-      "hi52": -49.7,
-      "ytd": -28.46,
+      "price": 63407.7188,
+      "d1": -0.24,
+      "w1": 0.27,
+      "hi52": -49.76,
+      "ytd": -28.54,
       "spark": [
         -0.24,
         -2.29,
         -0.32,
         3.44,
-        -0.14
+        -0.24
       ],
       "ema_uptrend": false,
       "id": "bitcoin",
@@ -2780,17 +2780,17 @@
     },
     {
       "sym": "ETH",
-      "price": 1661.41,
-      "d1": -0.65,
-      "w1": -1.48,
-      "hi52": -66.46,
-      "ytd": -44.63,
+      "price": 1659.71,
+      "d1": -0.75,
+      "w1": -1.58,
+      "hi52": -66.5,
+      "ytd": -44.68,
       "spark": [
         0.22,
         -3.1,
         -1.07,
         3.22,
-        -0.65
+        -0.75
       ],
       "ema_uptrend": false,
       "id": "ethereum",
@@ -2798,17 +2798,17 @@
     },
     {
       "sym": "SOL",
-      "price": 66.57,
-      "d1": -0.38,
-      "w1": 0.39,
-      "hi52": -73.71,
-      "ytd": -47.48,
+      "price": 66.51,
+      "d1": -0.47,
+      "w1": 0.3,
+      "hi52": -73.73,
+      "ytd": -47.53,
       "spark": [
         0.73,
         -2.74,
         -2.77,
         5.8,
-        -0.38
+        -0.47
       ],
       "ema_uptrend": false,
       "id": "solana",
@@ -2816,17 +2816,17 @@
     },
     {
       "sym": "XRP",
-      "price": 1.1299,
-      "d1": -1.02,
-      "w1": -2.14,
-      "hi52": -69.05,
-      "ytd": -39.83,
+      "price": 1.1288,
+      "d1": -1.12,
+      "w1": -2.24,
+      "hi52": -69.08,
+      "ytd": -39.89,
       "spark": [
         1.17,
         -2.65,
         -3.52,
         4.04,
-        -1.02
+        -1.12
       ],
       "ema_uptrend": false,
       "id": "ripple",
@@ -6763,12 +6763,12 @@
       {
         "s": "FANG",
         "n": "Diamondback Energy Inc",
-        "w": 2.88
+        "w": 2.89
       },
       {
         "s": "MUR",
         "n": "Murphy Oil Corp",
-        "w": 2.83
+        "w": 2.84
       },
       {
         "s": "VLO",
@@ -6783,7 +6783,7 @@
       {
         "s": "VNOM",
         "n": "Viper Energy Inc Ordinary Shares - Class A",
-        "w": 2.76
+        "w": 2.77
       },
       {
         "s": "PSX",
@@ -7256,7 +7256,7 @@
     ],
     "MSOS": [
       {
-        "s": "CURA.TO",
+        "s": "CURA",
         "n": "Curaleaf Holdings Inc",
         "w": 12.28
       }
@@ -7681,7 +7681,7 @@
       {
         "s": "UMBF",
         "n": "UMB Financial Corp",
-        "w": 1.62
+        "w": 1.61
       },
       {
         "s": "EWBC",
@@ -7711,7 +7711,7 @@
       {
         "s": "ZION",
         "n": "Zions Bancorp NA",
-        "w": 1.57
+        "w": 1.56
       },
       {
         "s": "FLG",
@@ -9559,7 +9559,7 @@
   },
   "breadth": {
     "fear_greed": {
-      "score": 29.7,
+      "score": 34.0,
       "rating": "Fear"
     },
     "naaim": {
@@ -9567,15 +9567,15 @@
       "date": "06/10/2026"
     },
     "advance_decline": {
-      "advancers": 320,
-      "decliners": 181
+      "advancers": 397,
+      "decliners": 106
     },
     "new_high_low": {
-      "new_highs": 49,
-      "new_lows": 15
+      "new_highs": 59,
+      "new_lows": 10
     },
-    "pct_above_sma20": 64.5,
-    "pct_above_sma50": 56.8,
-    "pct_above_sma200": 61.1
+    "pct_above_sma20": 71.3,
+    "pct_above_sma50": 61.2,
+    "pct_above_sma200": 61.7
   }
 }
