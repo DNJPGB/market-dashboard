@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-10T22:40:12Z",
+  "generated_at": "2026-07-10T22:55:45Z",
   "futures": [
     {
       "sym": "ES1!",
@@ -2762,17 +2762,17 @@
   "crypto": [
     {
       "sym": "BTC",
-      "price": 64085.0,
-      "d1": 1.41,
-      "w1": 0.85,
-      "hi52": -49.22,
-      "ytd": -27.78,
+      "price": 64120.8008,
+      "d1": 1.47,
+      "w1": 0.9,
+      "hi52": -49.19,
+      "ytd": -27.74,
       "spark": [
         0.7,
         -1.09,
         -1.64,
         1.5,
-        1.41
+        1.47
       ],
       "ema_uptrend": true,
       "id": "bitcoin",
@@ -2780,17 +2780,17 @@
     },
     {
       "sym": "ETH",
-      "price": 1793.45,
-      "d1": 2.81,
-      "w1": 0.59,
-      "hi52": -63.8,
-      "ytd": -40.23,
+      "price": 1795.3199,
+      "d1": 2.91,
+      "w1": 0.69,
+      "hi52": -63.76,
+      "ytd": -40.16,
       "spark": [
         0.82,
         -1.62,
         -1.46,
         0.1,
-        2.81
+        2.91
       ],
       "ema_uptrend": true,
       "id": "ethereum",
@@ -2798,17 +2798,17 @@
     },
     {
       "sym": "SOL",
-      "price": 78.02,
-      "d1": -0.03,
-      "w1": -4.18,
-      "hi52": -69.19,
-      "ytd": -38.45,
+      "price": 78.16,
+      "d1": 0.15,
+      "w1": -4.01,
+      "hi52": -69.13,
+      "ytd": -38.34,
       "spark": [
         0.6,
         -1.55,
         -3.55,
         0.33,
-        -0.03
+        0.15
       ],
       "ema_uptrend": true,
       "id": "solana",
@@ -2816,17 +2816,17 @@
     },
     {
       "sym": "XRP",
-      "price": 1.104,
-      "d1": 0.98,
-      "w1": -4.49,
-      "hi52": -69.76,
-      "ytd": -41.21,
+      "price": 1.1053,
+      "d1": 1.09,
+      "w1": -4.38,
+      "hi52": -69.72,
+      "ytd": -41.14,
       "spark": [
         -1.05,
         -2.8,
         -1.96,
         0.31,
-        0.98
+        1.09
       ],
       "ema_uptrend": false,
       "id": "ripple",
@@ -2967,7 +2967,7 @@
       {
         "s": "GOOGL",
         "n": "Alphabet Inc Class A",
-        "w": 4.04
+        "w": 4.05
       },
       {
         "s": "HD",
@@ -3514,52 +3514,52 @@
       {
         "s": "NVDA",
         "n": "NVIDIA Corp",
-        "w": 14.64
+        "w": 12.64
       },
       {
         "s": "AAPL",
         "n": "Apple Inc",
-        "w": 12.84
+        "w": 11.09
       },
       {
         "s": "MSFT",
         "n": "Microsoft Corp",
-        "w": 8.37
-      },
-      {
-        "s": "MU",
-        "n": "Micron Technology Inc",
-        "w": 5.41
-      },
-      {
-        "s": "AVGO",
-        "n": "Broadcom Inc",
-        "w": 5.4
+        "w": 7.23
       },
       {
         "s": "AMD",
         "n": "Advanced Micro Devices Inc",
-        "w": 5.27
+        "w": 4.71
+      },
+      {
+        "s": "MU",
+        "n": "Micron Technology Inc",
+        "w": 4.68
+      },
+      {
+        "s": "AVGO",
+        "n": "Broadcom Inc",
+        "w": 4.67
       },
       {
         "s": "INTC",
         "n": "Intel Corp",
-        "w": 3.67
+        "w": 4.2
       },
       {
         "s": "AMAT",
         "n": "Applied Materials Inc",
-        "w": 3.19
+        "w": 3.66
       },
       {
         "s": "LRCX",
         "n": "Lam Research Corp",
-        "w": 3.02
+        "w": 3.45
       },
       {
         "s": "CSCO",
         "n": "Cisco Systems Inc",
-        "w": 2.58
+        "w": 2.96
       }
     ],
     "XLV": [
@@ -3670,52 +3670,52 @@
       {
         "s": "XOM",
         "n": "Exxon Mobil Corp",
-        "w": 22.63
+        "w": 20.25
       },
       {
         "s": "CVX",
         "n": "Chevron Corp",
-        "w": 16.06
+        "w": 14.37
       },
       {
         "s": "COP",
         "n": "ConocoPhillips",
-        "w": 6.56
-      },
-      {
-        "s": "WMB",
-        "n": "Williams Companies Inc",
-        "w": 5.02
-      },
-      {
-        "s": "VLO",
-        "n": "Valero Energy Corp",
-        "w": 4.63
-      },
-      {
-        "s": "MPC",
-        "n": "Marathon Petroleum Corp",
-        "w": 4.47
-      },
-      {
-        "s": "EOG",
-        "n": "EOG Resources Inc",
-        "w": 4.14
+        "w": 5.87
       },
       {
         "s": "SLB",
         "n": "SLB Ltd",
-        "w": 4.09
+        "w": 4.53
+      },
+      {
+        "s": "WMB",
+        "n": "Williams Companies Inc",
+        "w": 4.49
+      },
+      {
+        "s": "MPC",
+        "n": "Marathon Petroleum Corp",
+        "w": 4.46
+      },
+      {
+        "s": "EOG",
+        "n": "EOG Resources Inc",
+        "w": 4.44
+      },
+      {
+        "s": "VLO",
+        "n": "Valero Energy Corp",
+        "w": 4.42
       },
       {
         "s": "PSX",
         "n": "Phillips 66",
-        "w": 4.06
+        "w": 4.39
       },
       {
         "s": "KMI",
         "n": "Kinder Morgan Inc Class P",
-        "w": 3.75
+        "w": 4.34
       }
     ],
     "XLY": [
@@ -5507,52 +5507,52 @@
       {
         "s": "UEC",
         "n": "Uranium Energy Corp",
-        "w": 4.76
+        "w": 4.73
       },
       {
         "s": "HL",
         "n": "Hecla Mining Co",
-        "w": 4.62
+        "w": 4.59
       },
       {
         "s": "LEU",
         "n": "Centrus Energy Corp Class A",
-        "w": 4.6
+        "w": 4.57
       },
       {
         "s": "USAR",
         "n": "USA Rare Earth Inc",
-        "w": 4.47
+        "w": 4.44
       },
       {
         "s": "CDE",
         "n": "Coeur Mining Inc",
-        "w": 4.46
+        "w": 4.43
       },
       {
         "s": "MP",
         "n": "MP Materials Corp Ordinary Shares - Class A",
-        "w": 4.41
+        "w": 4.38
       },
       {
         "s": "FCX",
         "n": "Freeport-McMoRan Inc",
-        "w": 4.26
+        "w": 4.23
       },
       {
         "s": "RGLD",
         "n": "Royal Gold Inc",
-        "w": 4.26
+        "w": 4.23
       },
       {
         "s": "NEM",
         "n": "Newmont Corp",
-        "w": 4.24
+        "w": 4.21
       },
       {
         "s": "MTRN",
         "n": "Materion Corp",
-        "w": 4.22
+        "w": 4.19
       }
     ],
     "AGG": [
@@ -7057,52 +7057,52 @@
       {
         "s": "OC",
         "n": "Owens-Corning Inc",
-        "w": 4.1
+        "w": 4.21
       },
       {
         "s": "WMS",
         "n": "Advanced Drainage Systems Inc",
-        "w": 3.59
+        "w": 3.69
       },
       {
         "s": "KBH",
         "n": "KB Home",
-        "w": 3.56
+        "w": 3.66
       },
       {
         "s": "BLDR",
         "n": "Builders FirstSource Inc",
-        "w": 3.56
+        "w": 3.65
       },
       {
         "s": "MTH",
         "n": "Meritage Homes Corp",
-        "w": 3.52
+        "w": 3.62
       },
       {
         "s": "TOL",
         "n": "Toll Brothers Inc",
-        "w": 3.52
+        "w": 3.61
       },
       {
         "s": "IBP",
         "n": "Installed Building Products Inc",
-        "w": 3.48
+        "w": 3.58
       },
       {
         "s": "PHM",
         "n": "PulteGroup Inc",
-        "w": 3.43
+        "w": 3.53
       },
       {
         "s": "MAS",
         "n": "Masco Corp",
-        "w": 3.4
+        "w": 3.5
       },
       {
         "s": "SGI",
         "n": "Somnigroup International Inc",
-        "w": 3.4
+        "w": 3.49
       }
     ],
     "ARKK": [
@@ -9571,7 +9571,7 @@
   },
   "breadth": {
     "fear_greed": {
-      "score": 47.2,
+      "score": 49.5,
       "rating": "Neutral"
     },
     "naaim": {
@@ -9579,15 +9579,15 @@
       "date": "07/08/2026"
     },
     "advance_decline": {
-      "advancers": 301,
-      "decliners": 202
+      "advancers": 338,
+      "decliners": 163
     },
     "new_high_low": {
-      "new_highs": 33,
-      "new_lows": 3
+      "new_highs": 43,
+      "new_lows": 6
     },
-    "pct_above_sma20": 59.4,
-    "pct_above_sma50": 65.1,
-    "pct_above_sma200": 65.2
+    "pct_above_sma20": 62.5,
+    "pct_above_sma50": 68.5,
+    "pct_above_sma200": 67.6
   }
 }
