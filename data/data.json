@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-17T22:30:44Z",
+  "generated_at": "2026-07-17T22:43:09Z",
   "futures": [
     {
       "sym": "ES1!",
@@ -2762,17 +2762,17 @@
   "crypto": [
     {
       "sym": "BTC",
-      "price": 63917.3984,
-      "d1": 0.2,
-      "w1": 0.25,
-      "hi52": -49.35,
-      "ytd": -27.97,
+      "price": 63903.8086,
+      "d1": 0.18,
+      "w1": 0.23,
+      "hi52": -49.36,
+      "ytd": -27.98,
       "spark": [
         -2.38,
         4.37,
         -0.38,
         -1.43,
-        0.2
+        0.18
       ],
       "ema_uptrend": true,
       "id": "bitcoin",
@@ -2780,17 +2780,17 @@
     },
     {
       "sym": "ETH",
-      "price": 1838.53,
-      "d1": -1.32,
-      "w1": 1.81,
-      "hi52": -62.89,
-      "ytd": -38.72,
+      "price": 1837.09,
+      "d1": -1.4,
+      "w1": 1.73,
+      "hi52": -62.92,
+      "ytd": -38.77,
       "spark": [
         -1.79,
         6.54,
         1.45,
         -2.8,
-        -1.32
+        -1.4
       ],
       "ema_uptrend": true,
       "id": "ethereum",
@@ -2816,17 +2816,17 @@
     },
     {
       "sym": "XRP",
-      "price": 1.087,
-      "d1": 0.07,
-      "w1": 0.12,
-      "hi52": -70.22,
-      "ytd": -42.12,
+      "price": 1.0867,
+      "d1": 0.04,
+      "w1": 0.09,
+      "hi52": -70.23,
+      "ytd": -42.13,
       "spark": [
         -1.87,
         4.28,
         0.15,
         -2.38,
-        0.07
+        0.04
       ],
       "ema_uptrend": false,
       "id": "ripple",
@@ -6750,12 +6750,12 @@
       {
         "s": "TPL",
         "n": "Texas Pacific Land Corp",
-        "w": 3.16
+        "w": 3.17
       },
       {
         "s": "PBF",
         "n": "PBF Energy Inc Class A",
-        "w": 2.9
+        "w": 2.91
       },
       {
         "s": "DK",
@@ -6765,17 +6765,17 @@
       {
         "s": "EXE",
         "n": "Expand Energy Corp Ordinary Shares - New",
-        "w": 2.79
+        "w": 2.8
       },
       {
         "s": "CNX",
         "n": "CNX Resources Corp",
-        "w": 2.77
+        "w": 2.78
       },
       {
         "s": "EQT",
         "n": "EQT Corp",
-        "w": 2.74
+        "w": 2.75
       },
       {
         "s": "VLO",
@@ -6785,7 +6785,7 @@
       {
         "s": "AR",
         "n": "Antero Resources Corp",
-        "w": 2.67
+        "w": 2.68
       },
       {
         "s": "DINO",
@@ -9571,7 +9571,7 @@
   },
   "breadth": {
     "fear_greed": {
-      "score": 41.7,
+      "score": 37.1,
       "rating": "Fear"
     },
     "naaim": {
@@ -9579,15 +9579,15 @@
       "date": "07/15/2026"
     },
     "advance_decline": {
-      "advancers": 370,
-      "decliners": 132
+      "advancers": 147,
+      "decliners": 356
     },
     "new_high_low": {
-      "new_highs": 70,
-      "new_lows": 1
+      "new_highs": 46,
+      "new_lows": 5
     },
-    "pct_above_sma20": 64.8,
-    "pct_above_sma50": 67.7,
-    "pct_above_sma200": 71.0
+    "pct_above_sma20": 58.4,
+    "pct_above_sma50": 64.5,
+    "pct_above_sma200": 69.0
   }
 }
