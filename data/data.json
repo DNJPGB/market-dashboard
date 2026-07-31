@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-31T22:32:03Z",
+  "generated_at": "2026-07-31T22:55:21Z",
   "futures": [
     {
       "sym": "ES1!",
@@ -2762,17 +2762,17 @@
   "crypto": [
     {
       "sym": "BTC",
-      "price": 62933.3594,
-      "d1": -2.77,
-      "w1": -3.68,
-      "hi52": -50.13,
-      "ytd": -29.07,
+      "price": 62870.0,
+      "d1": -2.87,
+      "w1": -3.78,
+      "hi52": -50.18,
+      "ytd": -29.15,
       "spark": [
         -2.47,
         0.23,
         0.06,
         1.28,
-        -2.77
+        -2.87
       ],
       "ema_uptrend": true,
       "id": "bitcoin",
@@ -2780,17 +2780,17 @@
     },
     {
       "sym": "ETH",
-      "price": 1862.62,
-      "d1": -2.86,
-      "w1": -4.65,
-      "hi52": -62.4,
-      "ytd": -37.92,
+      "price": 1859.9399,
+      "d1": -3.0,
+      "w1": -4.79,
+      "hi52": -62.45,
+      "ytd": -38.01,
       "spark": [
         -3.21,
         1.55,
         -0.6,
         0.46,
-        -2.86
+        -3.0
       ],
       "ema_uptrend": true,
       "id": "ethereum",
@@ -2798,17 +2798,17 @@
     },
     {
       "sym": "SOL",
-      "price": 72.84,
-      "d1": -2.19,
-      "w1": -4.91,
-      "hi52": -71.23,
-      "ytd": -42.54,
+      "price": 72.82,
+      "d1": -2.21,
+      "w1": -4.94,
+      "hi52": -71.24,
+      "ytd": -42.55,
       "spark": [
         -3.21,
         -0.6,
         -0.14,
         1.18,
-        -2.19
+        -2.21
       ],
       "ema_uptrend": false,
       "id": "solana",
@@ -2816,17 +2816,17 @@
     },
     {
       "sym": "XRP",
-      "price": 1.0629,
-      "d1": -1.93,
-      "w1": -4.39,
-      "hi52": -68.51,
-      "ytd": -43.4,
+      "price": 1.0608,
+      "d1": -2.12,
+      "w1": -4.58,
+      "hi52": -68.58,
+      "ytd": -43.51,
       "spark": [
         -4.17,
         0.25,
         0.46,
         1.02,
-        -1.93
+        -2.12
       ],
       "ema_uptrend": false,
       "id": "ripple",
@@ -9571,23 +9571,20 @@
   },
   "breadth": {
     "fear_greed": {
-      "score": 38.9,
+      "score": 42.5,
       "rating": "Fear"
     },
-    "naaim": {
-      "value": 79.7,
-      "date": "07/29/2026"
-    },
+    "naaim": null,
     "advance_decline": {
-      "advancers": 197,
-      "decliners": 304
+      "advancers": 221,
+      "decliners": 281
     },
     "new_high_low": {
-      "new_highs": 27,
+      "new_highs": 16,
       "new_lows": 6
     },
-    "pct_above_sma20": 56.3,
-    "pct_above_sma50": 64.7,
-    "pct_above_sma200": 69.6
+    "pct_above_sma20": 53.3,
+    "pct_above_sma50": 62.5,
+    "pct_above_sma200": 68.4
   }
 }
