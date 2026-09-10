@@ -1,67 +1,67 @@
 {
-  "generated_at": "2026-09-10T21:46:17Z",
+  "generated_at": "2026-09-10T23:37:50Z",
   "futures": [
     {
       "sym": "ES1!",
-      "price": 7602.0,
-      "d1": -0.55,
-      "w1": -0.97,
-      "hi52": -3.02,
-      "ytd": 10.17,
+      "price": 7600.25,
+      "d1": -0.57,
+      "w1": -0.99,
+      "hi52": -3.04,
+      "ytd": 10.14,
       "spark": [
         1.02,
         -0.42,
         -0.54,
         -0.48,
-        -0.55
+        -0.57
       ],
       "ema_uptrend": false
     },
     {
       "sym": "NQ1!",
-      "price": 29143.25,
-      "d1": -1.04,
-      "w1": -0.15,
-      "hi52": -5.89,
-      "ytd": 14.8,
+      "price": 29106.0,
+      "d1": -1.16,
+      "w1": -0.27,
+      "hi52": -6.01,
+      "ytd": 14.66,
       "spark": [
         1.16,
         0.14,
         -0.09,
         -0.3,
-        -1.04
+        -1.16
       ],
       "ema_uptrend": false
     },
     {
       "sym": "RTY1!",
-      "price": 2890.8,
-      "d1": -1.1,
-      "w1": -2.3,
-      "hi52": -6.14,
-      "ytd": 14.6,
+      "price": 2891.8,
+      "d1": -1.07,
+      "w1": -2.26,
+      "hi52": -6.11,
+      "ytd": 14.64,
       "spark": [
         0.37,
         0.23,
         -0.44,
         -1.37,
-        -1.1
+        -1.07
       ],
       "ema_uptrend": false
     },
     {
       "sym": "YM1!",
-      "price": 52089.0,
-      "d1": -0.64,
-      "w1": -1.94,
-      "hi52": -5.09,
-      "ytd": 7.14,
+      "price": 52101.0,
+      "d1": -0.62,
+      "w1": -1.92,
+      "hi52": -5.07,
+      "ytd": 7.17,
       "spark": [
         1.17,
         -0.57,
         -1.14,
         -0.77,
-        -0.64
+        -0.62
       ],
       "ema_uptrend": false
     }
@@ -70,11 +70,11 @@
   "metals": [
     {
       "sym": "GC1!",
-      "price": 4358.5,
+      "price": 4358.7998,
       "d1": -1.3,
-      "w1": -0.18,
-      "hi52": -21.98,
-      "ytd": 1.02,
+      "w1": -0.17,
+      "hi52": -21.97,
+      "ytd": 1.03,
       "spark": [
         2.87,
         -1.38,
@@ -86,65 +86,65 @@
     },
     {
       "sym": "SI1!",
-      "price": 64.09,
-      "d1": -5.67,
-      "w1": -0.98,
-      "hi52": -47.16,
-      "ytd": -9.16,
+      "price": 64.055,
+      "d1": -5.72,
+      "w1": -1.03,
+      "hi52": -47.19,
+      "ytd": -9.21,
       "spark": [
         3.48,
         -1.38,
         0.38,
         2.48,
-        -5.67
+        -5.72
       ],
       "ema_uptrend": true
     },
     {
       "sym": "HG1!",
-      "price": 6.526,
-      "d1": -4.08,
-      "w1": 0.38,
-      "hi52": -5.3,
-      "ytd": 15.71,
+      "price": 6.528,
+      "d1": -4.05,
+      "w1": 0.42,
+      "hi52": -4.08,
+      "ytd": 15.74,
       "spark": [
         1.17,
         0.3,
         2.15,
         0.96,
-        -4.08
+        -4.05
       ],
       "ema_uptrend": true
     },
     {
       "sym": "PL1!",
-      "price": 1784.1,
-      "d1": -6.81,
-      "w1": 1.38,
-      "hi52": -37.45,
-      "ytd": -16.07,
+      "price": 1782.5,
+      "d1": -6.89,
+      "w1": 1.29,
+      "hi52": -37.51,
+      "ytd": -16.15,
       "spark": [
         3.9,
         -0.4,
         1.49,
         3.58,
-        -6.81
+        -6.89
       ],
       "ema_uptrend": true
     },
     {
       "sym": "PA1!",
-      "price": 1290.5,
-      "d1": -5.62,
-      "w1": -4.17,
-      "hi52": -40.53,
-      "ytd": -22.63,
+      "price": 1293.0,
+      "d1": -5.43,
+      "w1": -3.98,
+      "hi52": -40.41,
+      "ytd": -22.48,
       "spark": [
         5.89,
         -2.51,
         -2.48,
         0.86,
-        -5.62
+        -5.43
       ],
       "ema_uptrend": true
     }
@@ -152,17 +152,17 @@
   "commod": [
     {
       "sym": "CL1!",
-      "price": 103.93,
-      "d1": 8.2,
-      "w1": 14.2,
-      "hi52": -13.01,
-      "ytd": 81.32,
+      "price": 103.83,
+      "d1": 8.1,
+      "w1": 14.09,
+      "hi52": -13.1,
+      "ytd": 81.14,
       "spark": [
         0.32,
         0.2,
         1.69,
         3.25,
-        8.2
+        8.1
       ],
       "ema_uptrend": true
     },
@@ -316,49 +316,49 @@
     },
     {
       "sym": "^FTSE",
-      "price": 10608.9199,
-      "d1": -0.57,
-      "w1": -2.05,
-      "hi52": -3.46,
-      "ytd": 6.61,
+      "price": 10670.0996,
+      "d1": -1.31,
+      "w1": -0.8,
+      "hi52": -2.91,
+      "ytd": 7.23,
       "spark": [
+        0.7,
         -0.0,
         -0.08,
         -0.1,
-        -1.31,
-        -0.57
+        -1.31
       ],
       "ema_uptrend": false
     },
     {
       "sym": "^FCHI",
-      "price": 8116.7598,
-      "d1": -0.49,
-      "w1": -2.05,
-      "hi52": -7.29,
-      "ytd": -0.96,
+      "price": 8156.6699,
+      "d1": -1.94,
+      "w1": -1.5,
+      "hi52": -6.83,
+      "ytd": -0.47,
       "spark": [
+        0.07,
         -0.09,
         0.33,
         0.14,
-        -1.94,
-        -0.49
+        -1.94
       ],
       "ema_uptrend": false
     },
     {
       "sym": "^GDAXI",
-      "price": 25361.1504,
-      "d1": -0.84,
-      "w1": -2.47,
-      "hi52": -4.72,
-      "ytd": 3.35,
+      "price": 25576.4492,
+      "d1": -1.66,
+      "w1": -1.02,
+      "hi52": -3.92,
+      "ytd": 4.23,
       "spark": [
+        0.63,
         0.17,
         -0.15,
         0.0,
-        -1.66,
-        -0.84
+        -1.66
       ],
       "ema_uptrend": false
     }
@@ -2762,17 +2762,17 @@
   "crypto": [
     {
       "sym": "BTC",
-      "price": 77141.6172,
-      "d1": -1.43,
-      "w1": -3.36,
-      "hi52": -38.87,
-      "ytd": -13.06,
+      "price": 76745.1406,
+      "d1": -1.94,
+      "w1": -3.86,
+      "hi52": -39.19,
+      "ytd": -13.51,
       "spark": [
         0.66,
         -1.54,
         -0.86,
         -0.23,
-        -1.43
+        -1.94
       ],
       "ema_uptrend": true,
       "id": "bitcoin",
@@ -2780,17 +2780,17 @@
     },
     {
       "sym": "ETH",
-      "price": 2459.96,
-      "d1": -0.28,
-      "w1": -0.84,
-      "hi52": -48.36,
-      "ytd": -18.01,
+      "price": 2442.1899,
+      "d1": -1.0,
+      "w1": -1.55,
+      "hi52": -48.73,
+      "ytd": -18.6,
       "spark": [
         1.36,
         -0.94,
         -0.24,
         -0.73,
-        -0.28
+        -1.0
       ],
       "ema_uptrend": true,
       "id": "ethereum",
@@ -2798,17 +2798,17 @@
     },
     {
       "sym": "SOL",
-      "price": 99.91,
-      "d1": -1.67,
-      "w1": -3.18,
-      "hi52": -60.54,
-      "ytd": -21.18,
+      "price": 99.06,
+      "d1": -2.51,
+      "w1": -4.0,
+      "hi52": -60.88,
+      "ytd": -21.85,
       "spark": [
         3.16,
         -2.43,
         -0.52,
         -1.66,
-        -1.67
+        -2.51
       ],
       "ema_uptrend": true,
       "id": "solana",
@@ -2816,17 +2816,17 @@
     },
     {
       "sym": "XRP",
-      "price": 1.3538,
-      "d1": -2.91,
-      "w1": -4.15,
-      "hi52": -57.47,
-      "ytd": -27.91,
+      "price": 1.3384,
+      "d1": -4.02,
+      "w1": -5.24,
+      "hi52": -57.96,
+      "ytd": -28.73,
       "spark": [
         0.73,
         -1.76,
         1.32,
         -1.54,
-        -2.91
+        -4.02
       ],
       "ema_uptrend": true,
       "id": "ripple",
@@ -5124,6 +5124,11 @@
     ],
     "LIT": [
       {
+        "s": "RIO",
+        "n": "Rio Tinto PLC ADR",
+        "w": 22.17
+      },
+      {
         "s": "6752.T",
         "n": "Panasonic Holdings Corp",
         "w": 6.46
@@ -5374,6 +5379,11 @@
         "w": 4.98
       },
       {
+        "s": "NVO",
+        "n": "Novo Nordisk AS ADR",
+        "w": 4.92
+      },
+      {
         "s": "MCK",
         "n": "McKesson Corp",
         "w": 4.7
@@ -5387,6 +5397,11 @@
         "s": "JNJ",
         "n": "Johnson & Johnson",
         "w": 4.43
+      },
+      {
+        "s": "GSK",
+        "n": "GSK PLC ADR",
+        "w": 4.13
       }
     ],
     "TAN": [
@@ -5764,6 +5779,11 @@
         "w": 5.02
       },
       {
+        "s": "ARGX",
+        "n": "argenx SE ADR",
+        "w": 4.72
+      },
+      {
         "s": "ILMN",
         "n": "Illumina Inc",
         "w": 3.34
@@ -5855,6 +5875,11 @@
         "s": "RIVN",
         "n": "Rivian Automotive Inc Class A",
         "w": 4.42
+      },
+      {
+        "s": "01211",
+        "n": "BYD Co Ltd Class H",
+        "w": 4.37
       },
       {
         "s": "TSLA",
@@ -5998,9 +6023,19 @@
         "w": 9.52
       },
       {
+        "s": "00939",
+        "n": "China Construction Bank Corp Class H",
+        "w": 9.37
+      },
+      {
         "s": "0700.HK",
         "n": "Tencent Holdings Ltd",
         "w": 8.65
+      },
+      {
+        "s": "01398",
+        "n": "Industrial And Commercial Bank Of China Ltd Class H",
+        "w": 6.37
       },
       {
         "s": "1810.HK",
@@ -6013,6 +6048,11 @@
         "w": 4.49
       },
       {
+        "s": "03988",
+        "n": "Bank Of China Ltd Class H",
+        "w": 4.15
+      },
+      {
         "s": "02318",
         "n": "Ping An Insurance (Group) Co. of China Ltd Class H",
         "w": 3.81
@@ -6021,6 +6061,11 @@
         "s": "9999.HK",
         "n": "NetEase Inc Ordinary Shares",
         "w": 3.64
+      },
+      {
+        "s": "01211",
+        "n": "BYD Co Ltd Class H",
+        "w": 3.35
       }
     ],
     "SMH": [
@@ -6048,6 +6093,11 @@
         "s": "AMD",
         "n": "Advanced Micro Devices Inc",
         "w": 5.36
+      },
+      {
+        "s": "ASML",
+        "n": "ASML Holding NV ADR",
+        "w": 5.1
       },
       {
         "s": "LRCX",
@@ -6214,6 +6264,11 @@
         "s": "GE",
         "n": "GE Aerospace",
         "w": 3.0
+      },
+      {
+        "s": "HEI",
+        "n": "Heico Corp",
+        "w": 2.94
       },
       {
         "s": "HXL",
@@ -6911,6 +6966,11 @@
         "w": 8.21
       },
       {
+        "s": "ARM",
+        "n": "ARM Holdings PLC ADR",
+        "w": 6.54
+      },
+      {
         "s": "RDDT",
         "n": "Reddit Inc Class A Shares",
         "w": 6.38
@@ -6934,6 +6994,11 @@
         "s": "RBRK",
         "n": "Rubrik Inc Class A Shares",
         "w": 4.51
+      },
+      {
+        "s": "KSPI",
+        "n": "Kaspi.kz JSC ADS",
+        "w": 3.54
       },
       {
         "s": "AHR",
@@ -7169,6 +7234,11 @@
         "s": "CIFR",
         "n": "Cipher Digital Inc",
         "w": 3.23
+      },
+      {
+        "s": "OPRA",
+        "n": "Opera Ltd ADR",
+        "w": 3.15
       },
       {
         "s": "WULF",
@@ -7898,6 +7968,31 @@
         "w": 25.38
       },
       {
+        "s": "YPF",
+        "n": "YPF SA ADR",
+        "w": 9.51
+      },
+      {
+        "s": "VIST",
+        "n": "Vista Energy SAB de CV ADR",
+        "w": 6.25
+      },
+      {
+        "s": "GGAL",
+        "n": "Grupo Financiero Galicia SA ADR",
+        "w": 5.62
+      },
+      {
+        "s": "BMA",
+        "n": "Banco Macro SA ADR",
+        "w": 4.32
+      },
+      {
+        "s": "PAM",
+        "n": "Pampa Energia SA ADR",
+        "w": 4.17
+      },
+      {
         "s": "FVI.TO",
         "n": "Fortuna Mining Corp",
         "w": 4.07
@@ -7906,6 +8001,11 @@
         "s": "SSRM.TO",
         "n": "SSR Mining Inc",
         "w": 3.92
+      },
+      {
+        "s": "TGS",
+        "n": "Transportadora de Gas del Sur SA ADR",
+        "w": 3.66
       },
       {
         "s": "CEPU",
@@ -8081,6 +8181,16 @@
         "w": 9.56
       },
       {
+        "s": "00939",
+        "n": "China Construction Bank Corp Class H",
+        "w": 3.99
+      },
+      {
+        "s": "01398",
+        "n": "Industrial And Commercial Bank Of China Ltd Class H",
+        "w": 2.46
+      },
+      {
         "s": "1810.HK",
         "n": "Xiaomi Corp Class B",
         "w": 2.35
@@ -8089,6 +8199,11 @@
         "s": "3690.HK",
         "n": "Meituan Class B",
         "w": 1.98
+      },
+      {
+        "s": "03988",
+        "n": "Bank Of China Ltd Class H",
+        "w": 1.97
       },
       {
         "s": "02318",
@@ -8116,6 +8231,16 @@
         "s": "NU",
         "n": "Nu Holdings Ltd Ordinary Shares Class A",
         "w": 9.45
+      },
+      {
+        "s": "ITUB4",
+        "n": "Itau Unibanco Holding SA Participating Preferred",
+        "w": 7.65
+      },
+      {
+        "s": "PETR4",
+        "n": "Petroleo Brasileiro SA Petrobras Participating Preferred",
+        "w": 7.01
       },
       {
         "s": "PETR3.SA",
@@ -8710,6 +8835,11 @@
         "w": 2.15
       },
       {
+        "s": "500034",
+        "n": "Bajaj Finance Ltd",
+        "w": 2.14
+      },
+      {
         "s": "LT.NS",
         "n": "Larsen & Toubro Ltd",
         "w": 2.0
@@ -8908,6 +9038,16 @@
         "w": 0.91
       },
       {
+        "s": "005935",
+        "n": "Samsung Electronics Co Ltd Participating Preferred",
+        "w": 0.88
+      },
+      {
+        "s": "00939",
+        "n": "China Construction Bank Corp Class H",
+        "w": 0.82
+      },
+      {
         "s": "2317.TW",
         "n": "Hon Hai Precision Industry Co Ltd",
         "w": 0.78
@@ -9005,6 +9145,11 @@
         "s": "SWED-A.ST",
         "n": "Swedbank AB Class A",
         "w": 4.09
+      },
+      {
+        "s": "ATCO B",
+        "n": "Atlas Copco AB Class B",
+        "w": 3.53
       },
       {
         "s": "ERIC-B.ST",
@@ -9378,28 +9523,73 @@
     ],
     "THD": [
       {
+        "s": "DELTA-R",
+        "n": "Delta Electronics (Thailand) PCL Units Non-Voting Depository Receipt",
+        "w": 14.4
+      },
+      {
+        "s": "PTT-R",
+        "n": "Ptt PCL Units Non-Voting Depository Receipt",
+        "w": 7.56
+      },
+      {
+        "s": "ADVANC-R",
+        "n": "Advanced Info Service PCL Units Non-Voting Depository Receipt",
+        "w": 6.36
+      },
+      {
+        "s": "AOT-R",
+        "n": "Airports Of Thailand PLC Units Non-voting depository receipts",
+        "w": 4.63
+      },
+      {
+        "s": "CPALL-R",
+        "n": "CP All PCL Units Non-voting Depository Receipts",
+        "w": 4.43
+      },
+      {
         "s": "GULF-R",
         "n": "Gulf Development PCL NVDR",
         "w": 4.38
+      },
+      {
+        "s": "BDMS-R",
+        "n": "Bangkok Dusit Medical Services PCL Units Non-Voting Depository Receipt",
+        "w": 3.9
+      },
+      {
+        "s": "PTTEP-R",
+        "n": "PTT Exploration & Production PCL Units Non-Voting Depository Receipt",
+        "w": 3.55
+      },
+      {
+        "s": "SCC-R",
+        "n": "Siam Cement PCL Units Non-Voting Depository Receipt",
+        "w": 3.49
+      },
+      {
+        "s": "KTB-R",
+        "n": "Krung Thai Bank PCL Units Non-Voting Depository Receipt",
+        "w": 2.8
       }
     ]
   },
   "breadth": {
     "fear_greed": {
-      "score": 39.0,
+      "score": 33.3,
       "rating": "Fear"
     },
     "naaim": null,
     "advance_decline": {
-      "advancers": 98,
-      "decliners": 405
+      "advancers": 167,
+      "decliners": 332
     },
     "new_high_low": {
-      "new_highs": 12,
-      "new_lows": 33
+      "new_highs": 10,
+      "new_lows": 32
     },
-    "pct_above_sma20": 22.1,
-    "pct_above_sma50": 37.8,
-    "pct_above_sma200": 59.7
+    "pct_above_sma20": 17.7,
+    "pct_above_sma50": 33.6,
+    "pct_above_sma200": 57.7
   }
 }
